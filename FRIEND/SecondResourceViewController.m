@@ -9,6 +9,7 @@
 #import "SecondResourceViewController.h"
 #import "ResourceTableCell.h"
 #import "NewUIButton.h"
+#import "MBProgressHUD.h"
 
 static NSString * const resourceCell = @"resourceCell";
 static NSString * const blankTableCell = @"blankTableCell";
@@ -23,17 +24,22 @@ static NSString * const blankTableCell = @"blankTableCell";
     [super viewDidLoad];
     
     self.navigationController.navigationBar.titleTextAttributes = @{
-                                                                    NSForegroundColorAttributeName: [UIColor colorWithRed:212/255.0 green:28/255.0 blue:36/255.0 alpha: 1],
+                                                                    NSForegroundColorAttributeName: [UIColor colorWithRed:47/255.0 green:211/255.0 blue:148/255.0 alpha: 1],
                                                                     UITextAttributeFont: [UIFont fontWithName:@"Montserrat-Regular" size:18.0f]};
-    self.navigationItem.title = @"FRIEND";
+    self.navigationItem.title = @"TRUST";
     
     self.table_view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.table_view.bounds.size.width, 0.01f)];
     
-    
-    questions = [[NSArray alloc] initWithObjects: @"How much do you value community events about entrepreneurship?",
+    NSLog(@"%@", _foundQuestions);
+    NSLog(@"%d", [_foundQuestions count]);
+    if ([_foundQuestions count] > 0) {
+        questions = _foundQuestions;
+    } else {
+        questions = [[NSArray alloc] initWithObjects: @"How much do you value community events about entrepreneurship?",
                  @"How much do you value community events about entrepreneurship?",
                  @"How much do you value community events about entrepreneurship?", nil];
-    
+    }
+        
     [self.table_view reloadData];
     
 }
@@ -109,10 +115,7 @@ static NSString * const blankTableCell = @"blankTableCell";
 - (void)configureBasicCell:(ResourceTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSInteger tmpVal = indexPath.row / 2;
     
-    NSArray * myDataArray = [NSArray arrayWithObjects:[NSNumber numberWithInt:0], [NSNumber numberWithInt:2],@"A String", nil];
-    
-    NSArray *items = [[NSArray alloc] initWithObjects:cell.firstheart, cell.secondHeart, cell.thirdHeart, cell.fourthHeart, cell.fifthHeart, nil];
-    
+    [cell.questionTitle setText:[questions objectAtIndex:tmpVal]];
     cell.firstheart.tag = 5 * indexPath.row + 0;
     cell.secondHeart.tag = 5 * indexPath.row + 1;
     cell.thirdHeart.tag = 5 * indexPath.row + 2;
@@ -125,6 +128,16 @@ static NSString * const blankTableCell = @"blankTableCell";
     [cell.thirdHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [cell.fourthHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [cell.fifthHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.questionButton addTarget:self action:@selector(questionButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)questionButtonClicked:(UIButton*)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Learn more"
+                                                    message:@"A credit union is a member-owned financial cooperative, democratically controlled by its members, and operated for the purpose of promoting thrift, providing credit at competitive rates, and providing other financial services to its members. Learn more at https://en.wikipedia.org/wiki/Credit_union"
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 -(void)yourButtonClicked:(UIButton*)sender
@@ -173,6 +186,16 @@ static NSString * const blankTableCell = @"blankTableCell";
     {
         // Your code here
     }
+}
+
+- (IBAction)submitButton:(id)sender {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Submitting...";
+    [hud showWhileExecuting:@selector(test) onTarget:self withObject:nil animated:YES];
+}
+
+- (void) test {
+    [NSThread sleepForTimeInterval:2.2];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

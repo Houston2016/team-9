@@ -45,7 +45,20 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trust_logo_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="LAq-z0-OhQ">
+                                <rect key="frame" x="99" y="305" width="187" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="EJu-mb-WSW"/>
+                                    <constraint firstAttribute="width" constant="187" id="I9Z-b0-0tf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LAq-z0-OhQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="285" id="k9N-rA-nch"/>
+                            <constraint firstAttribute="centerX" secondItem="LAq-z0-OhQ" secondAttribute="centerX" constant="-5" id="xij-2P-0AG"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1112,7 +1125,7 @@
                                 <rect key="frame" x="16" y="161" width="343" height="438"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resourceCell" rowHeight="152" id="aXL-BQ-CWX" customClass="ResourceTableCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="resourceCell" rowHeight="152" id="aXL-BQ-CWX" customClass="ResourceTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aXL-BQ-CWX" id="Sie-uP-cg3">
@@ -1249,6 +1262,12 @@
                                                     <rect key="frame" x="0.0" y="151" width="343" height="1"/>
                                                     <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPR-e4-BdV">
+                                                    <rect key="frame" x="293" y="8" width="37" height="33"/>
+                                                    <state key="normal" title="?">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="mI7-TF-Kb1" firstAttribute="top" secondItem="Sie-uP-cg3" secondAttribute="topMargin" id="6hy-eb-51V"/>
@@ -1287,6 +1306,7 @@
                                             <outlet property="fifthHeart" destination="U4Q-gZ-xaD" id="fgW-3E-J0B"/>
                                             <outlet property="firstheart" destination="1gh-o8-1c2" id="Wg9-rY-2BY"/>
                                             <outlet property="fourthHeart" destination="f0b-ao-UAd" id="hjd-ui-vBx"/>
+                                            <outlet property="questionButton" destination="iPR-e4-BdV" id="jPI-i1-fvi"/>
                                             <outlet property="questionTitle" destination="mI7-TF-Kb1" id="zel-ze-N91"/>
                                             <outlet property="secondHeart" destination="mWZ-at-OLt" id="NjM-53-7dn"/>
                                             <outlet property="thirdHeart" destination="7US-EY-GjW" id="XaH-Nn-pK4"/>
@@ -1315,6 +1335,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitButton:" destination="eph-g9-SPl" eventType="touchUpInside" id="KnJ-af-NRP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1364,5 +1387,6 @@
         <image name="plus_blue.png" width="250" height="250"/>
         <image name="plus_purple.png" width="250" height="250"/>
         <image name="plus_teal.png" width="250" height="250"/>
+        <image name="trust_logo_home.png" width="1251" height="382"/>
     </resources>
 </document>

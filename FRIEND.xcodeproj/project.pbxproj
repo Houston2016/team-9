@@ -51,6 +51,13 @@
 		527DC50F1C78312F000E9961 /* splash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50B1C78312F000E9961 /* splash2.png */; };
 		527DC5101C78312F000E9961 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50C1C78312F000E9961 /* splash3.png */; };
 		527DC5131C784324000E9961 /* NewUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC5121C784324000E9961 /* NewUIButton.m */; };
+		527DC5201C78CB66000E9961 /* tmp-2-cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 527DC51C1C78CB66000E9961 /* tmp-2-cropped.gif */; };
+		527DC5211C78CB66000E9961 /* tmp-3-cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 527DC51D1C78CB66000E9961 /* tmp-3-cropped.gif */; };
+		527DC5221C78CB66000E9961 /* tmp-4-cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 527DC51E1C78CB66000E9961 /* tmp-4-cropped.gif */; };
+		527DC5231C78CB66000E9961 /* tmp-img-cropped.gif in Resources */ = {isa = PBXBuildFile; fileRef = 527DC51F1C78CB66000E9961 /* tmp-img-cropped.gif */; };
+		527DC5261C78CF98000E9961 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5241C78CF98000E9961 /* Icon-40@2x.png */; };
+		527DC5271C78CF98000E9961 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5251C78CF98000E9961 /* Icon-40@3x.png */; };
+		527DC5291C78D286000E9961 /* trust_logo_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5281C78D286000E9961 /* trust_logo_home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		527DC4931C77EEFB000E9961 /* FRIEND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRIEND.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527DC4931C77EEFB000E9961 /* TRUST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRUST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527DC4971C77EEFB000E9961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527DC4981C77EEFB000E9961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		527DC49A1C77EEFB000E9961 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -123,6 +130,13 @@
 		527DC50C1C78312F000E9961 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash3.png; sourceTree = "<group>"; };
 		527DC5111C784324000E9961 /* NewUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUIButton.h; sourceTree = "<group>"; };
 		527DC5121C784324000E9961 /* NewUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUIButton.m; sourceTree = "<group>"; };
+		527DC51C1C78CB66000E9961 /* tmp-2-cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tmp-2-cropped.gif"; sourceTree = "<group>"; };
+		527DC51D1C78CB66000E9961 /* tmp-3-cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tmp-3-cropped.gif"; sourceTree = "<group>"; };
+		527DC51E1C78CB66000E9961 /* tmp-4-cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tmp-4-cropped.gif"; sourceTree = "<group>"; };
+		527DC51F1C78CB66000E9961 /* tmp-img-cropped.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "tmp-img-cropped.gif"; sourceTree = "<group>"; };
+		527DC5241C78CF98000E9961 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		527DC5251C78CF98000E9961 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		527DC5281C78D286000E9961 /* trust_logo_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trust_logo_home.png; sourceTree = "<group>"; };
 		B3146667D8D40D989C633B02 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B860916DF09A6AF2F34C3D2D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D6018F3F071669BDB5D88D69 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,7 +175,7 @@
 		527DC4941C77EEFB000E9961 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				527DC4931C77EEFB000E9961 /* FRIEND.app */,
+				527DC4931C77EEFB000E9961 /* TRUST.app */,
 				527DC4AC1C77EEFB000E9961 /* FRIENDTests.xctest */,
 			);
 			name = Products;
@@ -232,12 +246,17 @@
 		527DC4C51C77F2AB000E9961 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				527DC51C1C78CB66000E9961 /* tmp-2-cropped.gif */,
+				527DC51D1C78CB66000E9961 /* tmp-3-cropped.gif */,
+				527DC51E1C78CB66000E9961 /* tmp-4-cropped.gif */,
+				527DC51F1C78CB66000E9961 /* tmp-img-cropped.gif */,
 				527DC4DC1C780A8B000E9961 /* heart_icon_blue.png */,
 				527DC4DD1C780A8B000E9961 /* heart_icon_purple.png */,
 				527DC4DE1C780A8B000E9961 /* heart_icon_teal.png */,
 				527DC4DF1C780A8B000E9961 /* heartopen_icon_blue.png */,
 				527DC4E01C780A8B000E9961 /* heartopen_icon_purple.png */,
 				527DC4E11C780A8B000E9961 /* heartopen_icon_teal.png */,
+				527DC5281C78D286000E9961 /* trust_logo_home.png */,
 				527DC4E21C780A8B000E9961 /* minus_blue.png */,
 				527DC4E31C780A8B000E9961 /* minus_purple.png */,
 				527DC5001C78232D000E9961 /* fb-icon.png */,
@@ -258,6 +277,8 @@
 				527DC50A1C78312F000E9961 /* splash1.png */,
 				527DC50B1C78312F000E9961 /* splash2.png */,
 				527DC50C1C78312F000E9961 /* splash3.png */,
+				527DC5241C78CF98000E9961 /* Icon-40@2x.png */,
+				527DC5251C78CF98000E9961 /* Icon-40@3x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -298,7 +319,7 @@
 			);
 			name = FRIEND;
 			productName = FRIEND;
-			productReference = 527DC4931C77EEFB000E9961 /* FRIEND.app */;
+			productReference = 527DC4931C77EEFB000E9961 /* TRUST.app */;
 			productType = "com.apple.product-type.application";
 		};
 		527DC4AB1C77EEFB000E9961 /* FRIENDTests */ = {
@@ -362,13 +383,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				527DC4EC1C780A8B000E9961 /* heartopen_icon_purple.png in Resources */,
+				527DC5221C78CB66000E9961 /* tmp-4-cropped.gif in Resources */,
 				527DC4F71C780B00000E9961 /* heart_icon.png in Resources */,
 				527DC4CD1C77F4CD000E9961 /* Montserrat-Light.otf in Resources */,
 				527DC4CE1C77F4CD000E9961 /* Montserrat-Regular.otf in Resources */,
 				527DC4D81C7801C0000E9961 /* hamburger_icon.png in Resources */,
 				527DC4E91C780A8B000E9961 /* heart_icon_purple.png in Resources */,
 				527DC4A21C77EEFB000E9961 /* Main.storyboard in Resources */,
+				527DC5291C78D286000E9961 /* trust_logo_home.png in Resources */,
 				527DC4EF1C780A8B000E9961 /* minus_purple.png in Resources */,
+				527DC5231C78CB66000E9961 /* tmp-img-cropped.gif in Resources */,
 				527DC4F11C780A8B000E9961 /* plus_blue.png in Resources */,
 				527DC4C71C77F2DD000E9961 /* gender_neutral_icon.png in Resources */,
 				527DC4F21C780A8B000E9961 /* plus_purple.png in Resources */,
@@ -376,7 +400,9 @@
 				527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */,
 				527DC4EE1C780A8B000E9961 /* minus_blue.png in Resources */,
 				527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */,
+				527DC5261C78CF98000E9961 /* Icon-40@2x.png in Resources */,
 				527DC4F31C780A8B000E9961 /* plus_teal.png in Resources */,
+				527DC5271C78CF98000E9961 /* Icon-40@3x.png in Resources */,
 				527DC4EA1C780A8B000E9961 /* heart_icon_teal.png in Resources */,
 				527DC5081C7829E1000E9961 /* facebook.png in Resources */,
 				527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */,
@@ -387,9 +413,11 @@
 				527DC5011C78232D000E9961 /* fb-icon.png in Resources */,
 				527DC4EB1C780A8B000E9961 /* heartopen_icon_blue.png in Resources */,
 				527DC50E1C78312F000E9961 /* splash1.png in Resources */,
+				527DC5211C78CB66000E9961 /* tmp-3-cropped.gif in Resources */,
 				527DC4F01C780A8B000E9961 /* minus_teal.png in Resources */,
 				527DC5101C78312F000E9961 /* splash3.png in Resources */,
 				527DC4F61C780B00000E9961 /* heart_empty.png in Resources */,
+				527DC5201C78CB66000E9961 /* tmp-2-cropped.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,11 +606,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B860916DF09A6AF2F34C3D2D /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = FRIEND/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRUST;
 			};
 			name = Debug;
 		};
@@ -590,11 +618,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3146667D8D40D989C633B02 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				INFOPLIST_FILE = FRIEND/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRUST;
 			};
 			name = Release;
 		};

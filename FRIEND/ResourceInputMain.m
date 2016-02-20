@@ -8,11 +8,15 @@
 
 #import "ResourceInputMain.h"
 #import "SecondResourceViewController.h"
+#import "AppDelegate.h"
+#import "MBProgressHUD.h"
+#import "JSONKit.h"
 
 @implementation ResourceInputMain {
     NSArray* earnArray;
     NSArray* learnArray;
     NSArray* belongArray;
+    NSArray* foundQuestions;
 }
 
 - (void)viewDidLoad {
@@ -296,7 +300,53 @@
     [[NSUserDefaults standardUserDefaults] setObject:array forKey:@"weights"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    [self performSegueWithIdentifier:@"ResourceToSecondResource" sender:self];
+    NSString *urlAsString = [NSString stringWithFormat:@"http://54.211.34.104:3000/api/questions"];
+    
+    NSURL *url = [[NSURL alloc] initWithString:urlAsString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self sendUrlRequest:request];
+}
+
+- (void) sendUrlRequest:(NSURLRequest*)request{
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [NSURLConnection sendAsynchronousRequest: request
+                                       queue: [NSOperationQueue mainQueue]
+                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error) {
+                               // Check for errors first
+                               if (error) {
+                                   NSLog(@"Error in updateInfoFromServer: %@ %@", error, [error localizedDescription]);
+                               } else if (!response) {
+                                   NSLog(@"Could not reach server");
+                               } else if (!data) {
+                                   NSLog(@"Server did not return any data");
+                               } else {
+                                   NSLog(@"%@", data);
+                                   [self analyzeData:data];
+                                   
+                               }
+                           }];
+}
+
+- (void) analyzeData:(NSData*) data {
+    JSONDecoder *decoder = [[JSONDecoder alloc]
+                            initWithParseOptions:JKParseOptionNone];
+    NSDictionary *results = [decoder objectWithData:data];
+    NSLog(@"%@", results);
+    
+    NSDictionary *questionsDict = [results objectForKey:@"Questions"];
+    
+    NSLog(@"%@", questionsDict);
+    
+    NSMutableArray *tmp = [[NSMutableArray alloc] init];
+    for (NSDictionary *item in questionsDict) {
+        [tmp addObject:[item objectForKey:@"Questions"]];
+    }
+    foundQuestions = [tmp copy];
+    NSLog(@"%@",tmp);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self performSegueWithIdentifier:@"ResourceToSecondResource" sender:self];
+    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -310,6 +360,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ResourceToSecondResource"]) {
         SecondResourceViewController *destinationViewController = (SecondResourceViewController *)segue.destinationViewController;
+        destinationViewController.foundQuestions = foundQuestions;
         
         
     }
