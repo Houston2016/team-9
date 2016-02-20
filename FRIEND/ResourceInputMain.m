@@ -8,6 +8,7 @@
 
 #import "ResourceInputMain.h"
 #import "SecondResourceViewController.h"
+#import "AppDelegate.h"
 
 @implementation ResourceInputMain {
     NSArray* earnArray;
@@ -296,7 +297,30 @@
     [[NSUserDefaults standardUserDefaults] setObject:array forKey:@"weights"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
-    [self performSegueWithIdentifier:@"ResourceToSecondResource" sender:self];
+    NSString *urlAsString = [NSString stringWithFormat:@"http://54.211.34.104:3000/api/questions"];
+    
+    NSURL *url = [[NSURL alloc] initWithString:urlAsString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self sendUrlRequest:request];
+}
+
+- (void) sendUrlRequest:(NSURLRequest*)request{
+    
+    [NSURLConnection sendAsynchronousRequest: request
+                                       queue: [NSOperationQueue mainQueue]
+                           completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error) {
+                               // Check for errors first
+                               if (error) {
+                                   NSLog(@"Error in updateInfoFromServer: %@ %@", error, [error localizedDescription]);
+                               } else if (!response) {
+                                   NSLog(@"Could not reach server");
+                               } else if (!data) {
+                                   NSLog(@"Server did not return any data");
+                               } else {
+                                   NSLog(@"%@", data);
+                                   [self performSegueWithIdentifier:@"ResourceToSecondResource" sender:self];
+                               }
+                           }];
 }
 
 - (void)didReceiveMemoryWarning {
