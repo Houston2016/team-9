@@ -17,7 +17,7 @@
     
     self.pageTitles = [[NSArray alloc] initWithObjects:@"Welcome to FRIEND", @"Get Involved", @"See Events", @"Voice your Opinion", nil];
     self.pageSubtitles = [[NSArray alloc] initWithObjects:@"FREIND helps you connect with your community", @"Learn how to give back to your community", @"See community events relative to your preferences", @"Help give back to your community with interest forms and surveys", nil];
-    self.pageImages = [[NSArray alloc] initWithObjects:@"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", nil];
+    self.pageImages = [[NSArray alloc] initWithObjects:@"splash0.png", @"splash1.png", @"splash2.png", @"splash1.png", nil];
     
     // Create page view controller
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationVertical options:nil];

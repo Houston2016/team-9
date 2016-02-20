@@ -45,6 +45,10 @@
 		527DC5011C78232D000E9961 /* fb-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5001C78232D000E9961 /* fb-icon.png */; };
 		527DC5041C782433000E9961 /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC5031C782433000E9961 /* loginView.m */; };
 		527DC5081C7829E1000E9961 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5071C7829E1000E9961 /* facebook.png */; };
+		527DC50D1C78312F000E9961 /* splash0.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5091C78312F000E9961 /* splash0.png */; };
+		527DC50E1C78312F000E9961 /* splash1.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50A1C78312F000E9961 /* splash1.png */; };
+		527DC50F1C78312F000E9961 /* splash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50B1C78312F000E9961 /* splash2.png */; };
+		527DC5101C78312F000E9961 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50C1C78312F000E9961 /* splash3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,10 @@
 		527DC5021C782433000E9961 /* loginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginView.h; sourceTree = "<group>"; };
 		527DC5031C782433000E9961 /* loginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginView.m; sourceTree = "<group>"; };
 		527DC5071C7829E1000E9961 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		527DC5091C78312F000E9961 /* splash0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash0.png; sourceTree = "<group>"; };
+		527DC50A1C78312F000E9961 /* splash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash1.png; sourceTree = "<group>"; };
+		527DC50B1C78312F000E9961 /* splash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2.png; sourceTree = "<group>"; };
+		527DC50C1C78312F000E9961 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +242,10 @@
 				527DC4D71C7801C0000E9961 /* hamburger_icon.png */,
 				527DC4FE1C7822D7000E9961 /* fingerprint.png */,
 				527DC5071C7829E1000E9961 /* facebook.png */,
+				527DC5091C78312F000E9961 /* splash0.png */,
+				527DC50A1C78312F000E9961 /* splash1.png */,
+				527DC50B1C78312F000E9961 /* splash2.png */,
+				527DC50C1C78312F000E9961 /* splash3.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -337,11 +349,15 @@
 				527DC4EA1C780A8B000E9961 /* heart_icon_teal.png in Resources */,
 				527DC5081C7829E1000E9961 /* facebook.png in Resources */,
 				527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */,
+				527DC50F1C78312F000E9961 /* splash2.png in Resources */,
+				527DC50D1C78312F000E9961 /* splash0.png in Resources */,
 				527DC4ED1C780A8B000E9961 /* heartopen_icon_teal.png in Resources */,
 				527DC4E81C780A8B000E9961 /* heart_icon_blue.png in Resources */,
 				527DC5011C78232D000E9961 /* fb-icon.png in Resources */,
 				527DC4EB1C780A8B000E9961 /* heartopen_icon_blue.png in Resources */,
+				527DC50E1C78312F000E9961 /* splash1.png in Resources */,
 				527DC4F01C780A8B000E9961 /* minus_teal.png in Resources */,
+				527DC5101C78312F000E9961 /* splash3.png in Resources */,
 				527DC4F61C780B00000E9961 /* heart_empty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
