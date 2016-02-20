@@ -107,14 +107,21 @@ static NSString * const blankTableCell = @"blankTableCell";
 - (void)configureBasicCell:(ResourceTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSInteger tmpVal = indexPath.row / 2;
     
-    [cell.firstheart addTarget:self action:@selector(yourButtonClicked:cell:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.secondHeart addTarget:self action:@selector(yourButtonClicked:cell:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.thirdHeart addTarget:self action:@selector(yourButtonClicked:cell:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.fourthHeart addTarget:self action:@selector(yourButtonClicked:cell:) forControlEvents:UIControlEventTouchUpInside];
-    [cell.fifthHeart addTarget:self action:@selector(yourButtonClicked:cell:) forControlEvents:UIControlEventTouchUpInside];
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+                                [self methodSignatureForSelector:@selector(yourButtonClicked:withString:)]];
+    [invocation setTarget:self];
+    [invocation setSelector:@selector(changeImage:withString:)];
+    [invocation setArgument:A1 atIndex:2];
+    [invocation setArgument:fileString2 atIndex:3];
+    
+    [cell.firstheart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.secondHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.thirdHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.fourthHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.fifthHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
 }
 
--(void)yourButtonClicked:(UIButton*)sender andTableCell:(ResourceTableCell *) cell
+-(void)yourButtonClicked:(UIButton*)sender
 {
     NSLog(@"works");
     if (sender.tag == 0)

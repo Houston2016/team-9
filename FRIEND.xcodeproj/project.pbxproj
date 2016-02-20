@@ -41,6 +41,8 @@
 		527DC4F71C780B00000E9961 /* heart_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4F51C780B00000E9961 /* heart_icon.png */; };
 		527DC4FA1C781286000E9961 /* SecondResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4F91C781286000E9961 /* SecondResourceViewController.m */; };
 		527DC4FD1C7818FF000E9961 /* ResourceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */; };
+		527DC4FF1C7822D7000E9961 /* fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4FE1C7822D7000E9961 /* fingerprint.png */; };
+		527DC5011C78232D000E9961 /* fb-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5001C78232D000E9961 /* fb-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		527DC4F91C781286000E9961 /* SecondResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondResourceViewController.m; sourceTree = "<group>"; };
 		527DC4FB1C7818FF000E9961 /* ResourceTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceTableCell.h; sourceTree = "<group>"; };
 		527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceTableCell.m; sourceTree = "<group>"; };
+		527DC4FE1C7822D7000E9961 /* fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fingerprint.png; sourceTree = "<group>"; };
+		527DC5001C78232D000E9961 /* fb-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,7 @@
 				527DC4E11C780A8B000E9961 /* heartopen_icon_teal.png */,
 				527DC4E21C780A8B000E9961 /* minus_blue.png */,
 				527DC4E31C780A8B000E9961 /* minus_purple.png */,
+				527DC5001C78232D000E9961 /* fb-icon.png */,
 				527DC4E41C780A8B000E9961 /* minus_teal.png */,
 				527DC4F41C780B00000E9961 /* heart_empty.png */,
 				527DC4F51C780B00000E9961 /* heart_icon.png */,
@@ -220,6 +225,7 @@
 				527DC4C61C77F2DD000E9961 /* gender_neutral_icon.png */,
 				527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */,
 				527DC4D71C7801C0000E9961 /* hamburger_icon.png */,
+				527DC4FE1C7822D7000E9961 /* fingerprint.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				527DC4F11C780A8B000E9961 /* plus_blue.png in Resources */,
 				527DC4C71C77F2DD000E9961 /* gender_neutral_icon.png in Resources */,
 				527DC4F21C780A8B000E9961 /* plus_purple.png in Resources */,
+				527DC4FF1C7822D7000E9961 /* fingerprint.png in Resources */,
 				527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */,
 				527DC4EE1C780A8B000E9961 /* minus_blue.png in Resources */,
 				527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */,
@@ -323,6 +330,7 @@
 				527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */,
 				527DC4ED1C780A8B000E9961 /* heartopen_icon_teal.png in Resources */,
 				527DC4E81C780A8B000E9961 /* heart_icon_blue.png in Resources */,
+				527DC5011C78232D000E9961 /* fb-icon.png in Resources */,
 				527DC4EB1C780A8B000E9961 /* heartopen_icon_blue.png in Resources */,
 				527DC4F01C780A8B000E9961 /* minus_teal.png in Resources */,
 				527DC4F61C780B00000E9961 /* heart_empty.png in Resources */,

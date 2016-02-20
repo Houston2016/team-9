@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" id="1qH-mr-3u4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="E9E-gR-EZs" kind="modal" identifier="TeaserToMain" id="JF7-Cf-C4Q"/>
+                        <segue destination="fHg-Iw-2gY" kind="modal" identifier="TeaserToMain" id="4br-aj-bMm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lba-IU-B7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,6 +140,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="psI-7u-TFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="782.5" y="-465.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9N5-iW-jzF">
+            <objects>
+                <viewController id="eLs-ZZ-IwV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dwn-qz-HtR"/>
+                        <viewControllerLayoutGuide type="bottom" id="2GI-jB-mCd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Amv-xY-zi6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8J-Tw-Uz5">
+                                <rect key="frame" x="70" y="240" width="234" height="30"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tlo-hT-Fqu">
+                                <rect key="frame" x="70" y="287" width="234" height="30"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jZd-IE-zCG">
+                                <rect key="frame" x="57" y="278" width="261" height="1"/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fingerprint.png" translatesAutoresizingMaskIntoConstraints="NO" id="ln1-23-UAg">
+                                <rect key="frame" x="165" y="354" width="45" height="45"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geZ-Rb-zpe">
+                                <rect key="frame" x="298" y="600" width="61" height="47"/>
+                                <state key="normal" title="skip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rTr-QN-j8l"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="Qlr-Qy-bpH" kind="push" id="RDV-vz-o4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5R-5q-ZTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052.5" y="-459.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="co9-1P-paa">
@@ -919,26 +969,29 @@
             <point key="canvasLocation" x="3033" y="304"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="vMW-Wh-Wbd">
+        <scene sceneID="bWq-fa-Cwp">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E9E-gR-EZs" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHg-Iw-2gY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6si-ZR-XPb">
+                    <navigationItem key="navigationItem" id="9PU-tO-qNS"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gzr-88-Rer">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Qlr-Qy-bpH" kind="relationship" relationship="rootViewController" id="DVa-Bx-5ER"/>
+                        <segue destination="eLs-ZZ-IwV" kind="relationship" relationship="rootViewController" id="wc0-oG-cgg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hs-vI-RBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQW-xp-ugW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1386.5" y="304.5"/>
+            <point key="canvasLocation" x="1471.5" y="-465.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow_icon1.1.png" width="65" height="35"/>
+        <image name="fingerprint.png" width="512" height="512"/>
         <image name="gender_neutral_icon.png" width="646" height="646"/>
         <image name="heart_empty.png" width="154" height="144"/>
         <image name="heart_icon.png" width="291" height="267"/>
