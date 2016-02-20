@@ -9,6 +9,7 @@
 #import "SecondResourceViewController.h"
 #import "ResourceTableCell.h"
 #import "NewUIButton.h"
+#import "MBProgressHUD.h"
 
 static NSString * const resourceCell = @"resourceCell";
 static NSString * const blankTableCell = @"blankTableCell";
@@ -127,6 +128,16 @@ static NSString * const blankTableCell = @"blankTableCell";
     [cell.thirdHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [cell.fourthHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [cell.fifthHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.questionButton addTarget:self action:@selector(questionButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)questionButtonClicked:(UIButton*)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Learn more"
+                                                    message:@"A credit union is a member-owned financial cooperative, democratically controlled by its members, and operated for the purpose of promoting thrift, providing credit at competitive rates, and providing other financial services to its members. Learn more at https://en.wikipedia.org/wiki/Credit_union"
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 -(void)yourButtonClicked:(UIButton*)sender
@@ -175,6 +186,16 @@ static NSString * const blankTableCell = @"blankTableCell";
     {
         // Your code here
     }
+}
+
+- (IBAction)submitButton:(id)sender {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Submitting...";
+    [hud showWhileExecuting:@selector(test) onTarget:self withObject:nil animated:YES];
+}
+
+- (void) test {
+    [NSThread sleepForTimeInterval:2.2];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

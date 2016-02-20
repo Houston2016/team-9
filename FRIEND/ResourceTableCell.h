@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *fourthHeart;
 @property (weak, nonatomic) IBOutlet UILabel *value_label;
 @property (weak, nonatomic) IBOutlet UIButton *fifthHeart;
+@property (weak, nonatomic) IBOutlet UIButton *questionButton;
 
 @end
