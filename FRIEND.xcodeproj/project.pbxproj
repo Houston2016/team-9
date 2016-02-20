@@ -25,6 +25,21 @@
 		527DC4D61C77FF98000E9961 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4D51C77FF98000E9961 /* EventCell.m */; };
 		527DC4D81C7801C0000E9961 /* hamburger_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4D71C7801C0000E9961 /* hamburger_icon.png */; };
 		527DC4DB1C78060B000E9961 /* ResourceInputMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4DA1C78060B000E9961 /* ResourceInputMain.m */; };
+		527DC4E81C780A8B000E9961 /* heart_icon_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4DC1C780A8B000E9961 /* heart_icon_blue.png */; };
+		527DC4E91C780A8B000E9961 /* heart_icon_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4DD1C780A8B000E9961 /* heart_icon_purple.png */; };
+		527DC4EA1C780A8B000E9961 /* heart_icon_teal.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4DE1C780A8B000E9961 /* heart_icon_teal.png */; };
+		527DC4EB1C780A8B000E9961 /* heartopen_icon_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4DF1C780A8B000E9961 /* heartopen_icon_blue.png */; };
+		527DC4EC1C780A8B000E9961 /* heartopen_icon_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E01C780A8B000E9961 /* heartopen_icon_purple.png */; };
+		527DC4ED1C780A8B000E9961 /* heartopen_icon_teal.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E11C780A8B000E9961 /* heartopen_icon_teal.png */; };
+		527DC4EE1C780A8B000E9961 /* minus_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E21C780A8B000E9961 /* minus_blue.png */; };
+		527DC4EF1C780A8B000E9961 /* minus_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E31C780A8B000E9961 /* minus_purple.png */; };
+		527DC4F01C780A8B000E9961 /* minus_teal.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E41C780A8B000E9961 /* minus_teal.png */; };
+		527DC4F11C780A8B000E9961 /* plus_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E51C780A8B000E9961 /* plus_blue.png */; };
+		527DC4F21C780A8B000E9961 /* plus_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E61C780A8B000E9961 /* plus_purple.png */; };
+		527DC4F31C780A8B000E9961 /* plus_teal.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4E71C780A8B000E9961 /* plus_teal.png */; };
+		527DC4F61C780B00000E9961 /* heart_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4F41C780B00000E9961 /* heart_empty.png */; };
+		527DC4F71C780B00000E9961 /* heart_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4F51C780B00000E9961 /* heart_icon.png */; };
+		527DC4FA1C781286000E9961 /* SecondResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4F91C781286000E9961 /* SecondResourceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +83,22 @@
 		527DC4D71C7801C0000E9961 /* hamburger_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger_icon.png; sourceTree = "<group>"; };
 		527DC4D91C78060B000E9961 /* ResourceInputMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceInputMain.h; sourceTree = "<group>"; };
 		527DC4DA1C78060B000E9961 /* ResourceInputMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceInputMain.m; sourceTree = "<group>"; };
+		527DC4DC1C780A8B000E9961 /* heart_icon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_icon_blue.png; sourceTree = "<group>"; };
+		527DC4DD1C780A8B000E9961 /* heart_icon_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_icon_purple.png; sourceTree = "<group>"; };
+		527DC4DE1C780A8B000E9961 /* heart_icon_teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_icon_teal.png; sourceTree = "<group>"; };
+		527DC4DF1C780A8B000E9961 /* heartopen_icon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartopen_icon_blue.png; sourceTree = "<group>"; };
+		527DC4E01C780A8B000E9961 /* heartopen_icon_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartopen_icon_purple.png; sourceTree = "<group>"; };
+		527DC4E11C780A8B000E9961 /* heartopen_icon_teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartopen_icon_teal.png; sourceTree = "<group>"; };
+		527DC4E21C780A8B000E9961 /* minus_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_blue.png; sourceTree = "<group>"; };
+		527DC4E31C780A8B000E9961 /* minus_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_purple.png; sourceTree = "<group>"; };
+		527DC4E41C780A8B000E9961 /* minus_teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_teal.png; sourceTree = "<group>"; };
+		527DC4E51C780A8B000E9961 /* plus_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_blue.png; sourceTree = "<group>"; };
+		527DC4E61C780A8B000E9961 /* plus_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_purple.png; sourceTree = "<group>"; };
+		527DC4E71C780A8B000E9961 /* plus_teal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_teal.png; sourceTree = "<group>"; };
+		527DC4F41C780B00000E9961 /* heart_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_empty.png; sourceTree = "<group>"; };
+		527DC4F51C780B00000E9961 /* heart_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_icon.png; sourceTree = "<group>"; };
+		527DC4F81C781286000E9961 /* SecondResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondResourceViewController.h; sourceTree = "<group>"; };
+		527DC4F91C781286000E9961 /* SecondResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondResourceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +161,8 @@
 				527DC4D51C77FF98000E9961 /* EventCell.m */,
 				527DC4D91C78060B000E9961 /* ResourceInputMain.h */,
 				527DC4DA1C78060B000E9961 /* ResourceInputMain.m */,
+				527DC4F81C781286000E9961 /* SecondResourceViewController.h */,
+				527DC4F91C781286000E9961 /* SecondResourceViewController.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -163,6 +196,20 @@
 		527DC4C51C77F2AB000E9961 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				527DC4DC1C780A8B000E9961 /* heart_icon_blue.png */,
+				527DC4DD1C780A8B000E9961 /* heart_icon_purple.png */,
+				527DC4DE1C780A8B000E9961 /* heart_icon_teal.png */,
+				527DC4DF1C780A8B000E9961 /* heartopen_icon_blue.png */,
+				527DC4E01C780A8B000E9961 /* heartopen_icon_purple.png */,
+				527DC4E11C780A8B000E9961 /* heartopen_icon_teal.png */,
+				527DC4E21C780A8B000E9961 /* minus_blue.png */,
+				527DC4E31C780A8B000E9961 /* minus_purple.png */,
+				527DC4E41C780A8B000E9961 /* minus_teal.png */,
+				527DC4F41C780B00000E9961 /* heart_empty.png */,
+				527DC4F51C780B00000E9961 /* heart_icon.png */,
+				527DC4E51C780A8B000E9961 /* plus_blue.png */,
+				527DC4E61C780A8B000E9961 /* plus_purple.png */,
+				527DC4E71C780A8B000E9961 /* plus_teal.png */,
 				527DC4CB1C77F452000E9961 /* Montserrat-Light.otf */,
 				527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */,
 				527DC4C61C77F2DD000E9961 /* gender_neutral_icon.png */,
@@ -252,14 +299,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527DC4EC1C780A8B000E9961 /* heartopen_icon_purple.png in Resources */,
+				527DC4F71C780B00000E9961 /* heart_icon.png in Resources */,
 				527DC4CD1C77F4CD000E9961 /* Montserrat-Light.otf in Resources */,
 				527DC4CE1C77F4CD000E9961 /* Montserrat-Regular.otf in Resources */,
 				527DC4D81C7801C0000E9961 /* hamburger_icon.png in Resources */,
+				527DC4E91C780A8B000E9961 /* heart_icon_purple.png in Resources */,
 				527DC4A21C77EEFB000E9961 /* Main.storyboard in Resources */,
+				527DC4EF1C780A8B000E9961 /* minus_purple.png in Resources */,
+				527DC4F11C780A8B000E9961 /* plus_blue.png in Resources */,
 				527DC4C71C77F2DD000E9961 /* gender_neutral_icon.png in Resources */,
+				527DC4F21C780A8B000E9961 /* plus_purple.png in Resources */,
 				527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */,
+				527DC4EE1C780A8B000E9961 /* minus_blue.png in Resources */,
 				527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */,
+				527DC4F31C780A8B000E9961 /* plus_teal.png in Resources */,
+				527DC4EA1C780A8B000E9961 /* heart_icon_teal.png in Resources */,
 				527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */,
+				527DC4ED1C780A8B000E9961 /* heartopen_icon_teal.png in Resources */,
+				527DC4E81C780A8B000E9961 /* heart_icon_blue.png in Resources */,
+				527DC4EB1C780A8B000E9961 /* heartopen_icon_blue.png in Resources */,
+				527DC4F01C780A8B000E9961 /* minus_teal.png in Resources */,
+				527DC4F61C780B00000E9961 /* heart_empty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +342,7 @@
 				527DC49F1C77EEFB000E9961 /* ViewController.m in Sources */,
 				527DC49C1C77EEFB000E9961 /* AppDelegate.m in Sources */,
 				527DC4C41C77F1C2000E9961 /* TeaserController.m in Sources */,
+				527DC4FA1C781286000E9961 /* SecondResourceViewController.m in Sources */,
 				527DC4DB1C78060B000E9961 /* ResourceInputMain.m in Sources */,
 				527DC4991C77EEFB000E9961 /* main.m in Sources */,
 				527DC4D31C77F97B000E9961 /* MainViewController.m in Sources */,
