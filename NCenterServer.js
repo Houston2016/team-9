@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
 	user : 'root',
 	password : 'password'
 });
-
+// A comment
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
