@@ -58,14 +58,14 @@ static NSString * const blankTableCell = @"blankTableCell";
     self.table_view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.table_view.bounds.size.width, 0.01f)];
     
     
-    images = [[NSArray alloc] initWithObjects: @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", nil];
-    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"8 friends attending", @"", @"", nil];
-    titles = [[NSArray alloc] initWithObjects: @"Community Survey", @"Town Meeting", @"Job Fair", @"Job Posting", @"Volunteer Opportunity",nil];
-    subtitles = [[NSArray alloc] initWithObjects: @"Posted three days ago", @"6:30 this Friday at the Community Center", @"12-5pm this Saturday at the Community Center", @"Local business needs help with community outreach. Click to learn more.", @"Volunteer at your local library", nil];
+    images = [[NSArray alloc] initWithObjects: @"tmp-4-cropped.gif", @"tmp-img-cropped.gif", @"tmp-2-cropped.gif", @"gender_neutral_icon.png", @"tmp-img-cropped.gif", @"tmp-3-cropped.gif", nil];
+    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"3 friends attending", @"8 friends attending", @"", @"", nil];
+    titles = [[NSArray alloc] initWithObjects: @"Community Survey", @"Spring Gardening Workshop", @"Youth Empowerment Day", @"Job Fair", @"Job Posting", @"Volunteer Opportunity",nil];
+    subtitles = [[NSArray alloc] initWithObjects: @"Posted three days ago", @"9-12pm Feb 27 at 6225 Northdale Street", @"10am-2pm March 12 at 6500 Rookin Ave", @"12-5pm this Saturday at the Community Center", @"Local business needs help with community outreach. Click to learn more.", @"Volunteer at your local library", nil];
     
-    attendingTextsSpanish = [[NSArray alloc] initWithObjects:@"4 amigos que asisten", @"1 amigos que asisten", @"8 amigos que asisten", @"", @"", nil];
-    titlesSpanish = [[NSArray alloc] initWithObjects: @"encuesta sobre la comunidad", @"reunión de la ciudad", @"Feria de trabajo", @"Oferta de trabajo", @"oportunidad de voluntariado",nil];
-    subtitlesSpanish = [[NSArray alloc] initWithObjects: @"anunciado el hace tres días", @"06:30 este viernes en el centro de la comunidad", @"12-5pm este sábado en el Centro de la Comunidad", @"necesidades de empresas locales ayudan con extensión a la comunidad", @"Voluntarios en su biblioteca local", nil];
+    attendingTextsSpanish = [[NSArray alloc] initWithObjects:@"4 amigos que asisten", @"1 amigos que asisten", @"3 amigos que asisten", @"8 amigos que asisten", @"", @"", nil];
+    titlesSpanish = [[NSArray alloc] initWithObjects: @"encuesta sobre la comunidad", @"Día de capacitación de la juventud", @"Primavera jardinería Taller", @"Feria de trabajo", @"Oferta de trabajo", @"oportunidad de voluntariado",nil];
+    subtitlesSpanish = [[NSArray alloc] initWithObjects: @"anunciado el hace tres días", @"10 a.m.-2 p.m. 12 de marzo en 6500 Rookin Ave", @"9-12pm 27 de febrero en la calle 6225 Northdale", @"12-5pm este sábado en el Centro de la Comunidad", @"necesidades de empresas locales ayudan con extensión a la comunidad", @"Voluntarios en su biblioteca local", nil];
     
     
     [self.table_view reloadData];

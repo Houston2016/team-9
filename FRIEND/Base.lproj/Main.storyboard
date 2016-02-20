@@ -45,7 +45,20 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trust_logo_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="LAq-z0-OhQ">
+                                <rect key="frame" x="99" y="305" width="187" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="EJu-mb-WSW"/>
+                                    <constraint firstAttribute="width" constant="187" id="I9Z-b0-0tf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LAq-z0-OhQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="285" id="k9N-rA-nch"/>
+                            <constraint firstAttribute="centerX" secondItem="LAq-z0-OhQ" secondAttribute="centerX" constant="-5" id="xij-2P-0AG"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -1374,5 +1387,6 @@
         <image name="plus_blue.png" width="250" height="250"/>
         <image name="plus_purple.png" width="250" height="250"/>
         <image name="plus_teal.png" width="250" height="250"/>
+        <image name="trust_logo_home.png" width="1251" height="382"/>
     </resources>
 </document>
