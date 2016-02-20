@@ -777,7 +777,7 @@
                                 <rect key="frame" x="16" y="161" width="288" height="387"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="aXL-BQ-CWX">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="resourceCell" rowHeight="172" id="aXL-BQ-CWX" customClass="ResourceTableCell">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aXL-BQ-CWX" id="Sie-uP-cg3">
@@ -872,6 +872,15 @@
                                                 <constraint firstItem="f0b-ao-UAd" firstAttribute="leading" secondItem="1gh-o8-1c2" secondAttribute="trailing" constant="6" id="qBO-oU-fKH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fifthHeart" destination="U4Q-gZ-xaD" id="fgW-3E-J0B"/>
+                                            <outlet property="firstheart" destination="1gh-o8-1c2" id="Wg9-rY-2BY"/>
+                                            <outlet property="fourthHeart" destination="f0b-ao-UAd" id="hjd-ui-vBx"/>
+                                            <outlet property="questionTitle" destination="mI7-TF-Kb1" id="zel-ze-N91"/>
+                                            <outlet property="secondHeart" destination="mWZ-at-OLt" id="NjM-53-7dn"/>
+                                            <outlet property="thirdHeart" destination="7US-EY-GjW" id="XaH-Nn-pK4"/>
+                                            <outlet property="value_label" destination="eJs-L6-1np" id="IkQ-3Z-AvG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
