@@ -7,6 +7,7 @@
 //
 
 #import "loginView.h"
+#import "MBProgressHUD.h"
 
 @implementation loginView
 
@@ -29,9 +30,16 @@
 }
 
 - (IBAction)skipButton:(id)sender {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Authenticating...";
+    [hud showWhileExecuting:@selector(test) onTarget:self withObject:nil animated:YES];
     
+    
+}
+
+- (void) test {
+    [NSThread sleepForTimeInterval:1.5];
     [self performSegueWithIdentifier:@"loginSegue" sender:self];
-    
 }
 
 @end
