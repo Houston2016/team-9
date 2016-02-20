@@ -321,6 +321,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="YUs-8p-sCp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCb-LM-yCg">
                                 <rect key="frame" x="100" y="265" width="36" height="33"/>
@@ -331,6 +334,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="fpc-WT-QDl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2W-eJ-X0o">
                                 <rect key="frame" x="142" y="265" width="36" height="33"/>
@@ -341,6 +347,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="ffo-NL-T2F"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXj-G0-h4I">
                                 <rect key="frame" x="184" y="265" width="36" height="33"/>
@@ -351,6 +360,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="18F-aU-9cw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDR-Wh-yhs">
                                 <rect key="frame" x="226" y="265" width="36" height="33"/>
@@ -361,6 +373,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="HZC-jT-keJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHA-iA-Hbd">
                                 <rect key="frame" x="266" y="265" width="36" height="33"/>
@@ -407,6 +422,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="performanceHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="1Gd-2u-oXL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOZ-Ly-47v">
                                 <rect key="frame" x="100" y="361" width="36" height="33"/>
@@ -417,6 +435,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="performanceHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="Q50-Pg-8VL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fx0-QI-iKx">
                                 <rect key="frame" x="142" y="361" width="36" height="33"/>
@@ -427,6 +448,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="performanceHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="eDq-Sj-gA0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdt-ca-NF1">
                                 <rect key="frame" x="184" y="361" width="36" height="33"/>
@@ -437,6 +461,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="performanceHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="QMy-z1-xew"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-as-K0V">
                                 <rect key="frame" x="226" y="361" width="36" height="33"/>
@@ -447,6 +474,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="performanceHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="elN-cz-R6V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg4-vd-weD">
                                 <rect key="frame" x="266" y="361" width="36" height="33"/>
@@ -490,6 +520,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="proximityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="GGy-RP-5M2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYT-bE-jvN">
                                 <rect key="frame" x="100" y="467" width="36" height="33"/>
@@ -500,6 +533,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="proximityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="riC-jS-8hv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3q-kv-oSp">
                                 <rect key="frame" x="142" y="467" width="36" height="33"/>
@@ -510,6 +546,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="proximityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="JCM-PP-U0R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrA-eF-GPi">
                                 <rect key="frame" x="184" y="467" width="36" height="33"/>
@@ -520,6 +559,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="proximityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="9Yc-zm-qYQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWe-D8-Qz9">
                                 <rect key="frame" x="226" y="467" width="36" height="33"/>
@@ -530,6 +572,9 @@
                                 <state key="normal" title="Button" image="heart_icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="proximityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="HZw-FV-BYw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qpR-4N-bHX">
                                 <rect key="frame" x="266" y="467" width="36" height="33"/>
