@@ -29,6 +29,8 @@ static NSString * const blankTableCell = @"blankTableCell";
     
     self.table_view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.table_view.bounds.size.width, 0.01f)];
     
+    NSLog(@"%@", _foundQuestions);
+    NSLog(@"%d", [_foundQuestions count]);
     if ([_foundQuestions count] > 0) {
         questions = _foundQuestions;
     } else {
@@ -112,10 +114,7 @@ static NSString * const blankTableCell = @"blankTableCell";
 - (void)configureBasicCell:(ResourceTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSInteger tmpVal = indexPath.row / 2;
     
-    NSArray * myDataArray = [NSArray arrayWithObjects:[NSNumber numberWithInt:0], [NSNumber numberWithInt:2],@"A String", nil];
-    
-    NSArray *items = [[NSArray alloc] initWithObjects:cell.firstheart, cell.secondHeart, cell.thirdHeart, cell.fourthHeart, cell.fifthHeart, nil];
-    
+    [cell.questionTitle setText:[questions objectAtIndex:tmpVal]];
     cell.firstheart.tag = 5 * indexPath.row + 0;
     cell.secondHeart.tag = 5 * indexPath.row + 1;
     cell.thirdHeart.tag = 5 * indexPath.row + 2;
