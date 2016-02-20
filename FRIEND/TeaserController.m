@@ -44,7 +44,7 @@
     UIViewController *visibleViewController = self.pageViewController.viewControllers[0];
     NSUInteger index = ((TeaserPageViewController*) visibleViewController).pageIndex;
     if (index == 3) {
-        [self performSegueWithIdentifier:@"TeaserToResource" sender:self];
+        [self performSegueWithIdentifier:@"TeaserToMain" sender:self];
         return;
     }
     index++;
