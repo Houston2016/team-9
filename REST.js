@@ -14,7 +14,7 @@ router.get("/",function(req,res){
 
 
 router.get("/questions",function(req,res) {
-	var query = "SELECT Questions from ??";
+	var query = "SELECT Questions,EngageID from ??";
 	var table = ["Questions"];
 	query = mysql.format(query,table);
 	connection.query(query,function(err,rows) {
