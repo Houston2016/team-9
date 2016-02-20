@@ -18,11 +18,18 @@ static NSString * const blankTableCell = @"blankTableCell";
     NSArray *titles;
     NSArray *subtitles;
     NSArray *attendingTexts;
-    NSArray *times;
+    
+    NSArray *titlesSpanish;
+    NSArray *subtitlesSpanish;
+    NSArray *attendingTextsSpanish;
+    
+    
     
     UIImage *image;
     NSString *selectedTitle;
     NSString *selectedSubtitle;
+    
+    BOOL english;
     
     
 }
@@ -30,6 +37,7 @@ static NSString * const blankTableCell = @"blankTableCell";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    english = TRUE;
     
     UIFont *font = [UIFont fontWithName:@"Montserrat-Regular" size:17.0f];
     
@@ -50,11 +58,34 @@ static NSString * const blankTableCell = @"blankTableCell";
     self.table_view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.table_view.bounds.size.width, 0.01f)];
     
     
-    images = [[NSArray alloc] initWithObjects: @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", nil];
-    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"", nil];
-    titles = [[NSArray alloc] initWithObjects: @"Community Survey", @"Town Meeting", @"Volunteer Opportunity",nil];
-    subtitles = [[NSArray alloc] initWithObjects: @"Posted three days ago", @"6:30 this Friday at the Community Center", @"Volunteer at your local library", nil];
+    images = [[NSArray alloc] initWithObjects: @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", nil];
+    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"8 friends attending", @"", nil];
+    titles = [[NSArray alloc] initWithObjects: @"Community Survey", @"Town Meeting", @"Job Fair", @"Volunteer Opportunity",nil];
+    subtitles = [[NSArray alloc] initWithObjects: @"Posted three days ago", @"6:30 this Friday at the Community Center", @"12-5pm this Saturday at the Community Center", @"Volunteer at your local library", nil];
+    
+    attendingTextsSpanish = [[NSArray alloc] initWithObjects:@"4 amigos que asisten", @"1 amigos que asisten", @"8 amigos que asisten", @"", nil];
+    titlesSpanish = [[NSArray alloc] initWithObjects: @"encuesta sobre la comunidad", @"reunión de la ciudad", @"Feria de trabajo", @"oportunidad de voluntariado",nil];
+    subtitlesSpanish = [[NSArray alloc] initWithObjects: @"anunciado el hace tres días", @"06:30 este viernes en el centro de la comunidad", @"12-5pm este sábado en el Centro de la Comunidad", @"Voluntarios en su biblioteca local", nil];
+    
+    
     [self.table_view reloadData];
+    
+}
+
+- (IBAction)english_selected:(id)sender {
+    if (english == TRUE) {
+        english = FALSE;
+        [self.language_button setTitle:@"English" forState:UIControlStateNormal];
+        [self.currently_viewing_label setText:@"todas"];
+        [self.head_label setText:@"todas"];
+        [self.table_view reloadData];
+    } else {
+        english = TRUE;
+        [self.language_button setTitle:@"Espanol" forState:UIControlStateNormal];
+        [self.currently_viewing_label setText:@"ALL"];
+        [self.head_label setText:@"ALL"];
+        [self.table_view reloadData];
+    }
     
 }
 
@@ -69,6 +100,8 @@ static NSString * const blankTableCell = @"blankTableCell";
     
     [self performSegueWithIdentifier:@"tableViewSelectedSegue" sender:self];
 }
+
+
 
 /*- (void) test {
  [NSThread sleepForTimeInterval:1.6];
@@ -132,12 +165,22 @@ static NSString * const blankTableCell = @"blankTableCell";
     UIImage *tmpimage = [UIImage imageNamed: [images objectAtIndex:tmpVal]];
     [cell.table_img setImage:tmpimage];
     
-    [cell.main_label setText:[titles objectAtIndex:tmpVal]];
-    [cell.sub_label setText:[subtitles objectAtIndex:tmpVal]];
-    NSString *tmpText = [attendingTexts objectAtIndex:tmpVal];
-    [cell.attending_label setText:tmpText];
+    if (english) {
+        [cell.main_label setText:[titles objectAtIndex:tmpVal]];
+        [cell.sub_label setText:[subtitles  objectAtIndex:tmpVal]];
+        NSString *tmpText = [attendingTexts objectAtIndex:tmpVal];
+        [cell.attending_label setText:tmpText];
     if ([tmpText isEqualToString:@""]) {
         [cell.facebook_img setHidden:TRUE];
+    }
+    } else {
+        [cell.main_label setText:[titlesSpanish objectAtIndex:tmpVal]];
+        [cell.sub_label setText:[subtitlesSpanish objectAtIndex:tmpVal]];
+        NSString *tmpText = [attendingTextsSpanish objectAtIndex:tmpVal];
+        [cell.attending_label setText:tmpText];
+        if ([tmpText isEqualToString:@""]) {
+            [cell.facebook_img setHidden:TRUE];
+        }
     }
     
     

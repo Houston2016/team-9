@@ -134,24 +134,39 @@ static NSString * const blankTableCell = @"blankTableCell";
     int modVal = sender.tag % 5;
     if (modVal == 0) {
         [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.secondHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.fifthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.value_label setText:@"1 of 5"];
     } else if (modVal == 1) {
         [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.fifthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.value_label setText:@"2 of 5"];
     } else if (modVal == 2) {
         [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.fifthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.value_label setText:@"3 of 5"];
     } else if (modVal == 3) {
         [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.fifthHeart setImage:[UIImage imageNamed:@"heart_empty.png"] forState:UIControlStateNormal];
+        [cell.value_label setText:@"4 of 5"];
     } else if (modVal == 4) {
         [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
         [cell.fifthHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.value_label setText:@"5 of 5"];
     }
     NSLog(@"works");
     if (sender.tag == 0)
@@ -164,7 +179,7 @@ static NSString * const blankTableCell = @"blankTableCell";
     if (indexPath.row % 2 == 1) {
         return 10;
     } else {
-        return 152;
+        return 151;
     }
 }
 

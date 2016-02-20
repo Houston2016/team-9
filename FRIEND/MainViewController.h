@@ -13,9 +13,11 @@
 @property (weak, nonatomic) IBOutlet UITableView *table_view;
 
 @property (nonatomic, copy) NSArray *feedItems;
-@property (weak, nonatomic) IBOutlet UILabel *language_label;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *currently_viewing_label;
 @property (weak, nonatomic) IBOutlet UILabel *head_label;
+@property (weak, nonatomic) IBOutlet UIButton *language_button;
 
 
 @end

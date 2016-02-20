@@ -333,13 +333,6 @@
                                     <outlet property="delegate" destination="Qlr-Qy-bpH" id="PTj-Ra-7R1"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENGLISH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxI-fo-LoT">
-                                <rect key="frame" x="0.0" y="613" width="188" height="54"/>
-                                <color key="backgroundColor" red="0.2470588235" green="0.73725490199999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzW-h1-Dhl">
                                 <rect key="frame" x="187" y="613" width="188" height="54"/>
                                 <color key="backgroundColor" red="0.1843137255" green="0.82745098039999998" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -347,6 +340,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dY-mR-VGq">
+                                <rect key="frame" x="0.0" y="613" width="189" height="54"/>
+                                <color key="backgroundColor" red="0.2470588235" green="0.73725490199999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Espanol">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="english_selected:" destination="Qlr-Qy-bpH" eventType="touchUpInside" id="TY9-NR-jJx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -355,7 +360,7 @@
                     <connections>
                         <outlet property="currently_viewing_label" destination="bzW-h1-Dhl" id="CcU-YV-hox"/>
                         <outlet property="head_label" destination="T44-QU-1fN" id="AaL-l3-6lj"/>
-                        <outlet property="language_label" destination="oxI-fo-LoT" id="x2r-jw-wZk"/>
+                        <outlet property="language_button" destination="4dY-mR-VGq" id="R6X-mZ-uPa"/>
                         <outlet property="table_view" destination="Da6-gj-0ZX" id="lrq-BM-pSY"/>
                         <segue destination="edN-2v-fE9" kind="push" identifier="tableViewSelectedSegue" id="jwk-Gm-Ti8"/>
                     </connections>
@@ -1241,7 +1246,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQt-uW-Od8">
-                                                    <rect key="frame" x="0.0" y="150" width="343" height="1"/>
+                                                    <rect key="frame" x="0.0" y="151" width="343" height="1"/>
                                                     <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                             </subviews>
