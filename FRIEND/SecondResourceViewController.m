@@ -24,9 +24,9 @@ static NSString * const blankTableCell = @"blankTableCell";
     [super viewDidLoad];
     
     self.navigationController.navigationBar.titleTextAttributes = @{
-                                                                    NSForegroundColorAttributeName: [UIColor colorWithRed:212/255.0 green:28/255.0 blue:36/255.0 alpha: 1],
+                                                                    NSForegroundColorAttributeName: [UIColor colorWithRed:47/255.0 green:211/255.0 blue:148/255.0 alpha: 1],
                                                                     UITextAttributeFont: [UIFont fontWithName:@"Montserrat-Regular" size:18.0f]};
-    self.navigationItem.title = @"FRIEND";
+    self.navigationItem.title = @"TRUST";
     
     self.table_view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.table_view.bounds.size.width, 0.01f)];
     

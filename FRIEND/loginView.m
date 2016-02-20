@@ -23,7 +23,7 @@
     self.navigationController.navigationBar.titleTextAttributes = @{
                                                                     NSForegroundColorAttributeName: [UIColor colorWithRed:47/255.0 green:211/255.0 blue:148/255.0 alpha: 1],
                                                                     UITextAttributeFont: [UIFont fontWithName:@"Montserrat-Regular" size:18.0f]};
-    self.navigationItem.title = @"FRIEND";
+    self.navigationItem.title = @"TRUST";
     self.navigationItem.leftBarButtonItem = hamburger;
     self.navigationController.navigationItem.leftBarButtonItem = hamburger;
     
