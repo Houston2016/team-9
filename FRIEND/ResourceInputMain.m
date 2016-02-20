@@ -9,11 +9,14 @@
 #import "ResourceInputMain.h"
 #import "SecondResourceViewController.h"
 #import "AppDelegate.h"
+#import "MBProgressHUD.h"
+#import "JSONKit.h"
 
 @implementation ResourceInputMain {
     NSArray* earnArray;
     NSArray* learnArray;
     NSArray* belongArray;
+    NSArray* foundQuestions;
 }
 
 - (void)viewDidLoad {
@@ -305,7 +308,7 @@
 }
 
 - (void) sendUrlRequest:(NSURLRequest*)request{
-    
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [NSURLConnection sendAsynchronousRequest: request
                                        queue: [NSOperationQueue mainQueue]
                            completionHandler: ^(NSURLResponse *response, NSData *data, NSError *error) {
@@ -318,9 +321,32 @@
                                    NSLog(@"Server did not return any data");
                                } else {
                                    NSLog(@"%@", data);
-                                   [self performSegueWithIdentifier:@"ResourceToSecondResource" sender:self];
+                                   [self analyzeData:data];
+                                   
                                }
                            }];
+}
+
+- (void) analyzeData:(NSData*) data {
+    JSONDecoder *decoder = [[JSONDecoder alloc]
+                            initWithParseOptions:JKParseOptionNone];
+    NSDictionary *results = [decoder objectWithData:data];
+    NSLog(@"%@", results);
+    
+    NSDictionary *questionsDict = [results objectForKey:@"Questions"];
+    
+    NSLog(@"%@", questionsDict);
+    
+    NSMutableArray *tmp = [[NSMutableArray alloc] init];
+    for (NSDictionary *item in questionsDict) {
+        [tmp addObject:[item objectForKey:@"Questions"]];
+    }
+    foundQuestions = [tmp copy];
+    NSLog(@"%@",tmp);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [self performSegueWithIdentifier:@"ResourceToSecondResource" sender:self];
+    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -334,6 +360,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"ResourceToSecondResource"]) {
         SecondResourceViewController *destinationViewController = (SecondResourceViewController *)segue.destinationViewController;
+        destinationViewController.foundQuestions = foundQuestions;
         
         
     }

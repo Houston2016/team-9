@@ -29,11 +29,14 @@ static NSString * const blankTableCell = @"blankTableCell";
     
     self.table_view.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, self.table_view.bounds.size.width, 0.01f)];
     
-    
-    questions = [[NSArray alloc] initWithObjects: @"How much do you value community events about entrepreneurship?",
+    if ([_foundQuestions count] > 0) {
+        questions = _foundQuestions;
+    } else {
+        questions = [[NSArray alloc] initWithObjects: @"How much do you value community events about entrepreneurship?",
                  @"How much do you value community events about entrepreneurship?",
                  @"How much do you value community events about entrepreneurship?", nil];
-    
+    }
+        
     [self.table_view reloadData];
     
 }
