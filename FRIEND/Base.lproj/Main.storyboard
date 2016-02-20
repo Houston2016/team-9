@@ -883,7 +883,19 @@
                                             <outlet property="value_label" destination="eJs-L6-1np" id="IkQ-3Z-AvG"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="20" id="lpd-y9-851">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lpd-y9-851" id="KFB-c9-hFv">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eph-g9-SPl" id="GSf-kI-FYo"/>
+                                    <outlet property="delegate" destination="eph-g9-SPl" id="aGc-Kl-AXd"/>
+                                </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JE-xb-wez">
                                 <rect key="frame" x="16" y="518" width="288" height="40"/>
@@ -898,6 +910,9 @@
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Ra-yR-PXz"/>
+                    <connections>
+                        <outlet property="table_view" destination="KqL-rx-z92" id="3d5-Wp-pUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5D-Ya-Umg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

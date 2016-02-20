@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondResourceViewController : UIViewController
+@interface SecondResourceViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *table_view;
+
+
 
 @end
