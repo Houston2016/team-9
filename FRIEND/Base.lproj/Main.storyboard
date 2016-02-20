@@ -731,10 +731,15 @@
                         <outlet property="earnHeartE" destination="GDR-Wh-yhs" id="gNV-7I-3ZV"/>
                         <outlet property="earnMinusButton" destination="4Al-mt-1UT" id="1m2-n4-fZO"/>
                         <outlet property="earnPlusButton" destination="KHA-iA-Hbd" id="RUd-E8-e1D"/>
+                        <outlet property="learnHeartA" destination="Btw-xx-n8n" id="miF-PB-jdQ"/>
+                        <outlet property="learnHeartB" destination="GOZ-Ly-47v" id="aXg-4a-d5Q"/>
+                        <outlet property="learnHeartC" destination="Fx0-QI-iKx" id="PqO-bP-m6p"/>
+                        <outlet property="learnHeartD" destination="Sdt-ca-NF1" id="3ye-vq-0Kj"/>
+                        <outlet property="learnHeartE" destination="jjy-as-K0V" id="Vz5-93-FK5"/>
                         <outlet property="learnMinusButton" destination="b7S-iw-yvT" id="YtP-Ch-Xxa"/>
                         <outlet property="learnPlusButton" destination="pg4-vd-weD" id="nJV-Zt-e7T"/>
                         <outlet property="remainingLabel" destination="Aww-LN-HUt" id="7lj-Ps-lQo"/>
-                        <segue destination="eph-g9-SPl" kind="push" identifier="ContinueSurveySegue" id="yGj-As-uGC"/>
+                        <segue destination="eph-g9-SPl" kind="push" identifier="ResourceToSecondResource" id="yGj-As-uGC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yss-iv-cFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
