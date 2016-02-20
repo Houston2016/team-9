@@ -40,6 +40,7 @@
 		527DC4F61C780B00000E9961 /* heart_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4F41C780B00000E9961 /* heart_empty.png */; };
 		527DC4F71C780B00000E9961 /* heart_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4F51C780B00000E9961 /* heart_icon.png */; };
 		527DC4FA1C781286000E9961 /* SecondResourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4F91C781286000E9961 /* SecondResourceViewController.m */; };
+		527DC4FD1C7818FF000E9961 /* ResourceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		527DC4F51C780B00000E9961 /* heart_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart_icon.png; sourceTree = "<group>"; };
 		527DC4F81C781286000E9961 /* SecondResourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondResourceViewController.h; sourceTree = "<group>"; };
 		527DC4F91C781286000E9961 /* SecondResourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondResourceViewController.m; sourceTree = "<group>"; };
+		527DC4FB1C7818FF000E9961 /* ResourceTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceTableCell.h; sourceTree = "<group>"; };
+		527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				527DC4DA1C78060B000E9961 /* ResourceInputMain.m */,
 				527DC4F81C781286000E9961 /* SecondResourceViewController.h */,
 				527DC4F91C781286000E9961 /* SecondResourceViewController.m */,
+				527DC4FB1C7818FF000E9961 /* ResourceTableCell.h */,
+				527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 			files = (
 				527DC4D61C77FF98000E9961 /* EventCell.m in Sources */,
 				527DC49F1C77EEFB000E9961 /* ViewController.m in Sources */,
+				527DC4FD1C7818FF000E9961 /* ResourceTableCell.m in Sources */,
 				527DC49C1C77EEFB000E9961 /* AppDelegate.m in Sources */,
 				527DC4C41C77F1C2000E9961 /* TeaserController.m in Sources */,
 				527DC4FA1C781286000E9961 /* SecondResourceViewController.m in Sources */,

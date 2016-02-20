@@ -12,8 +12,11 @@
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
@@ -661,7 +664,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="XrA-eF-GPi" firstAttribute="leading" secondItem="G3q-kv-oSp" secondAttribute="trailing" constant="6" id="0A4-yT-qrL"/>
                             <constraint firstItem="Aww-LN-HUt" firstAttribute="leading" secondItem="pRO-0J-zMI" secondAttribute="trailing" constant="12" id="0MP-Rv-6dq"/>
@@ -757,7 +760,123 @@
                     <view key="view" contentMode="scaleToFill" id="1LD-ya-aLw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-pk-sd8">
+                                <rect key="frame" x="16" y="72" width="288" height="81"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please answer a few more questions about your community preferences" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiQ-DC-lcp">
+                                        <rect key="frame" x="8" y="8" width="272" height="65"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="172" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KqL-rx-z92">
+                                <rect key="frame" x="16" y="161" width="288" height="387"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="172" id="aXL-BQ-CWX">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aXL-BQ-CWX" id="Sie-uP-cg3">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBV-0y-zxw">
+                                                    <rect key="frame" x="0.0" y="170" width="288" height="1"/>
+                                                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much do you value community events about entrepreneurship?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-TF-Kb1">
+                                                    <rect key="frame" x="18" y="8" width="253" height="56"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWZ-at-OLt">
+                                                    <rect key="frame" x="64" y="72" width="36" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="IB5-P6-Ouo"/>
+                                                        <constraint firstAttribute="height" constant="33" id="nTc-tR-bHE"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="heart_icon.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="hQJ-cu-fuQ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7US-EY-GjW">
+                                                    <rect key="frame" x="110" y="72" width="36" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="Eew-cJ-kvo"/>
+                                                        <constraint firstAttribute="height" constant="33" id="aPT-cz-FQe"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="heart_icon.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="SDl-gk-GwM"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gh-o8-1c2">
+                                                    <rect key="frame" x="18" y="72" width="36" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="Rcx-LM-dMn"/>
+                                                        <constraint firstAttribute="height" constant="33" id="zL3-f6-kNX"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="heart_icon.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="FSf-Od-gmZ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0b-ao-UAd">
+                                                    <rect key="frame" x="165" y="72" width="36" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="33" id="3Xd-vu-qT1"/>
+                                                        <constraint firstAttribute="width" constant="36" id="wRR-Vr-EMq"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="heart_icon.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="P8F-Ae-dla"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4Q-gZ-xaD">
+                                                    <rect key="frame" x="224" y="72" width="36" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="9za-LQ-eYQ"/>
+                                                        <constraint firstAttribute="height" constant="33" id="fhY-oY-RNs"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="heart_icon.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="affordabilityHeartClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="eMi-0b-CH8"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 of 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJs-L6-1np">
+                                                    <rect key="frame" x="76" y="123" width="143" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="U4Q-gZ-xaD" firstAttribute="leading" secondItem="f0b-ao-UAd" secondAttribute="trailing" constant="6" id="O0g-zj-iir"/>
+                                                <constraint firstItem="7US-EY-GjW" firstAttribute="leading" secondItem="mWZ-at-OLt" secondAttribute="trailing" constant="6" id="ThL-Yc-AwF"/>
+                                                <constraint firstItem="1gh-o8-1c2" firstAttribute="leading" secondItem="7US-EY-GjW" secondAttribute="trailing" constant="6" id="jz9-3a-6Po"/>
+                                                <constraint firstItem="f0b-ao-UAd" firstAttribute="leading" secondItem="1gh-o8-1c2" secondAttribute="trailing" constant="6" id="qBO-oU-fKH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Ra-yR-PXz"/>
                 </viewController>
