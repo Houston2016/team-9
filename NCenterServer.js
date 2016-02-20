@@ -4,7 +4,7 @@ var app =  express();
 var mysql = require('mysql');
 var bodyParser = require('body-parser');
 var rest = require("./REST.js");
-
+var md5 = require('MD5');
 function REST(){
 	var self = this;
 	self.connectMysql();
@@ -45,9 +45,20 @@ REST.prototype.configureExpress = function(connection) {
 	var rest_router = new rest(router,connection,md5);
 	self.startServer();
 }
+REST.prototype.startServer = function() {
+	app.listen(3001,function() {
+		console.log("All right, Server is on listening on port 3000");
+	});
+	
 
+}
+REST.prototype.stop = function(err) {
+	console.log("Mysql connection error" +err);
+	process.exit(1);
 
+}
 
+new REST();
 
 
 //var connection = mysql.createConnection({
