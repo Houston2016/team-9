@@ -30,7 +30,7 @@
 }
 
 - (IBAction)skipTeasers:(id)sender {
-    [self.parent performSegueWithIdentifier:@"TeaserToResource" sender:self.parent];
+    [self.parent performSegueWithIdentifier:@"TeaserToMain" sender:self.parent];
 }
 
 - (void)didReceiveMemoryWarning {
