@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface EventCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *main_label;
+@property (weak, nonatomic) IBOutlet UILabel *sub_label;
+@property (weak, nonatomic) IBOutlet UIImageView *table_img;
 
 @end

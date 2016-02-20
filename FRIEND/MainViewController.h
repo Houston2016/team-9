@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *table_view;
+
+@property (nonatomic, copy) NSArray *feedItems;
+@property (weak, nonatomic) IBOutlet UILabel *language_label;
+@property (weak, nonatomic) IBOutlet UILabel *currently_viewing_label;
+@property (weak, nonatomic) IBOutlet UILabel *head_label;
+
 
 @end

@@ -21,6 +21,10 @@
 		527DC4CD1C77F4CD000E9961 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4CB1C77F452000E9961 /* Montserrat-Light.otf */; };
 		527DC4CE1C77F4CD000E9961 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */; };
 		527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */; };
+		527DC4D31C77F97B000E9961 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4D21C77F97B000E9961 /* MainViewController.m */; };
+		527DC4D61C77FF98000E9961 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4D51C77FF98000E9961 /* EventCell.m */; };
+		527DC4D81C7801C0000E9961 /* hamburger_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4D71C7801C0000E9961 /* hamburger_icon.png */; };
+		527DC4DB1C78060B000E9961 /* ResourceInputMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4DA1C78060B000E9961 /* ResourceInputMain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,13 @@
 		527DC4CB1C77F452000E9961 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_icon1.1.png; sourceTree = "<group>"; };
+		527DC4D11C77F97B000E9961 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		527DC4D21C77F97B000E9961 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		527DC4D41C77FF98000E9961 /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
+		527DC4D51C77FF98000E9961 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
+		527DC4D71C7801C0000E9961 /* hamburger_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger_icon.png; sourceTree = "<group>"; };
+		527DC4D91C78060B000E9961 /* ResourceInputMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceInputMain.h; sourceTree = "<group>"; };
+		527DC4DA1C78060B000E9961 /* ResourceInputMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceInputMain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +124,12 @@
 				527DC4C31C77F1C2000E9961 /* TeaserController.m */,
 				527DC4C81C77F32B000E9961 /* TeaserPageViewController.h */,
 				527DC4C91C77F32B000E9961 /* TeaserPageViewController.m */,
+				527DC4D11C77F97B000E9961 /* MainViewController.h */,
+				527DC4D21C77F97B000E9961 /* MainViewController.m */,
+				527DC4D41C77FF98000E9961 /* EventCell.h */,
+				527DC4D51C77FF98000E9961 /* EventCell.m */,
+				527DC4D91C78060B000E9961 /* ResourceInputMain.h */,
+				527DC4DA1C78060B000E9961 /* ResourceInputMain.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -150,6 +167,7 @@
 				527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */,
 				527DC4C61C77F2DD000E9961 /* gender_neutral_icon.png */,
 				527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */,
+				527DC4D71C7801C0000E9961 /* hamburger_icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -236,6 +254,7 @@
 			files = (
 				527DC4CD1C77F4CD000E9961 /* Montserrat-Light.otf in Resources */,
 				527DC4CE1C77F4CD000E9961 /* Montserrat-Regular.otf in Resources */,
+				527DC4D81C7801C0000E9961 /* hamburger_icon.png in Resources */,
 				527DC4A21C77EEFB000E9961 /* Main.storyboard in Resources */,
 				527DC4C71C77F2DD000E9961 /* gender_neutral_icon.png in Resources */,
 				527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */,
@@ -258,10 +277,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527DC4D61C77FF98000E9961 /* EventCell.m in Sources */,
 				527DC49F1C77EEFB000E9961 /* ViewController.m in Sources */,
 				527DC49C1C77EEFB000E9961 /* AppDelegate.m in Sources */,
 				527DC4C41C77F1C2000E9961 /* TeaserController.m in Sources */,
+				527DC4DB1C78060B000E9961 /* ResourceInputMain.m in Sources */,
 				527DC4991C77EEFB000E9961 /* main.m in Sources */,
+				527DC4D31C77F97B000E9961 /* MainViewController.m in Sources */,
 				527DC4C11C77F112000E9961 /* SplashViewController.m in Sources */,
 				527DC4CA1C77F32B000E9961 /* TeaserPageViewController.m in Sources */,
 			);
@@ -390,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FRIEND/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -400,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FRIEND/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
