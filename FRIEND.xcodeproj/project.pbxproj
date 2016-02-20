@@ -71,7 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		527DC4931C77EEFB000E9961 /* FRIEND.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRIEND.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		527DC4931C77EEFB000E9961 /* TRUST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRUST.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527DC4971C77EEFB000E9961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527DC4981C77EEFB000E9961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		527DC49A1C77EEFB000E9961 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		527DC4941C77EEFB000E9961 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				527DC4931C77EEFB000E9961 /* FRIEND.app */,
+				527DC4931C77EEFB000E9961 /* TRUST.app */,
 				527DC4AC1C77EEFB000E9961 /* FRIENDTests.xctest */,
 			);
 			name = Products;
@@ -319,7 +319,7 @@
 			);
 			name = FRIEND;
 			productName = FRIEND;
-			productReference = 527DC4931C77EEFB000E9961 /* FRIEND.app */;
+			productReference = 527DC4931C77EEFB000E9961 /* TRUST.app */;
 			productType = "com.apple.product-type.application";
 		};
 		527DC4AB1C77EEFB000E9961 /* FRIENDTests */ = {
@@ -610,7 +610,7 @@
 				INFOPLIST_FILE = FRIEND/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRUST;
 			};
 			name = Debug;
 		};
@@ -622,7 +622,7 @@
 				INFOPLIST_FILE = FRIEND/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TRUST;
 			};
 			name = Release;
 		};
