@@ -49,6 +49,7 @@
 		527DC50E1C78312F000E9961 /* splash1.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50A1C78312F000E9961 /* splash1.png */; };
 		527DC50F1C78312F000E9961 /* splash2.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50B1C78312F000E9961 /* splash2.png */; };
 		527DC5101C78312F000E9961 /* splash3.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC50C1C78312F000E9961 /* splash3.png */; };
+		527DC5131C784324000E9961 /* NewUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC5121C784324000E9961 /* NewUIButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		527DC50A1C78312F000E9961 /* splash1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash1.png; sourceTree = "<group>"; };
 		527DC50B1C78312F000E9961 /* splash2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash2.png; sourceTree = "<group>"; };
 		527DC50C1C78312F000E9961 /* splash3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash3.png; sourceTree = "<group>"; };
+		527DC5111C784324000E9961 /* NewUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUIButton.h; sourceTree = "<group>"; };
+		527DC5121C784324000E9961 /* NewUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUIButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 				527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */,
 				527DC5021C782433000E9961 /* loginView.h */,
 				527DC5031C782433000E9961 /* loginView.m */,
+				527DC5111C784324000E9961 /* NewUIButton.h */,
+				527DC5121C784324000E9961 /* NewUIButton.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -382,6 +387,7 @@
 				527DC49C1C77EEFB000E9961 /* AppDelegate.m in Sources */,
 				527DC4C41C77F1C2000E9961 /* TeaserController.m in Sources */,
 				527DC4FA1C781286000E9961 /* SecondResourceViewController.m in Sources */,
+				527DC5131C784324000E9961 /* NewUIButton.m in Sources */,
 				527DC4DB1C78060B000E9961 /* ResourceInputMain.m in Sources */,
 				527DC4991C77EEFB000E9961 /* main.m in Sources */,
 				527DC4D31C77F97B000E9961 /* MainViewController.m in Sources */,

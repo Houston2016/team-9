@@ -8,12 +8,14 @@
 
 #import "SecondResourceViewController.h"
 #import "ResourceTableCell.h"
+#import "NewUIButton.h"
 
 static NSString * const resourceCell = @"resourceCell";
 static NSString * const blankTableCell = @"blankTableCell";
 
 @implementation SecondResourceViewController {
     NSArray *questions;
+    NSDictionary *hearts;
 }
 
 - (void)viewDidLoad
@@ -107,12 +109,16 @@ static NSString * const blankTableCell = @"blankTableCell";
 - (void)configureBasicCell:(ResourceTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSInteger tmpVal = indexPath.row / 2;
     
-    /*NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
-                                [self methodSignatureForSelector:@selector(yourButtonClicked:withString:)]];
-    [invocation setTarget:self];
-    [invocation setSelector:@selector(changeImage:withString:)];
-    [invocation setArgument:A1 atIndex:2];
-    [invocation setArgument:fileString2 atIndex:3];*/
+    NSArray * myDataArray = [NSArray arrayWithObjects:[NSNumber numberWithInt:0], [NSNumber numberWithInt:2],@"A String", nil];
+    
+    NSArray *items = [[NSArray alloc] initWithObjects:cell.firstheart, cell.secondHeart, cell.thirdHeart, cell.fourthHeart, cell.fifthHeart, nil];
+    
+    cell.firstheart.tag = 5 * indexPath.row + 0;
+    cell.secondHeart.tag = 5 * indexPath.row + 1;
+    cell.thirdHeart.tag = 5 * indexPath.row + 2;
+    cell.fourthHeart.tag = 5 * indexPath.row + 3;
+    cell.fifthHeart.tag = 5 * indexPath.row + 4;
+    
     
     [cell.firstheart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [cell.secondHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -123,6 +129,30 @@ static NSString * const blankTableCell = @"blankTableCell";
 
 -(void)yourButtonClicked:(UIButton*)sender
 {
+    int val = floor(sender.tag / 5);
+    ResourceTableCell *cell = [self.table_view cellForRowAtIndexPath:[NSIndexPath indexPathForRow:val inSection:0]];
+    int modVal = sender.tag % 5;
+    if (modVal == 0) {
+        [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+    } else if (modVal == 1) {
+        [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+    } else if (modVal == 2) {
+        [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+    } else if (modVal == 3) {
+        [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+    } else if (modVal == 4) {
+        [cell.firstheart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.secondHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.thirdHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.fourthHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+        [cell.fifthHeart setImage:[UIImage imageNamed:@"heart_icon.png"] forState:UIControlStateNormal];
+    }
     NSLog(@"works");
     if (sender.tag == 0)
     {
@@ -130,12 +160,12 @@ static NSString * const blankTableCell = @"blankTableCell";
     }
 }
 
-/*- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row % 2 == 1) {
         return 10;
     } else {
-        return 400;
+        return 152;
     }
-}*/
+}
 
 @end
