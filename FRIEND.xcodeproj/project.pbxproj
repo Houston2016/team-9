@@ -14,6 +14,7 @@
 		527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4A31C77EEFB000E9961 /* Images.xcassets */; };
 		527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4A51C77EEFB000E9961 /* LaunchScreen.xib */; };
 		527DC4B31C77EEFB000E9961 /* FRIENDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4B21C77EEFB000E9961 /* FRIENDTests.m */; };
+		527DC4C11C77F112000E9961 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4C01C77F112000E9961 /* SplashViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		527DC4AC1C77EEFB000E9961 /* FRIENDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FRIENDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		527DC4B11C77EEFB000E9961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527DC4B21C77EEFB000E9961 /* FRIENDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRIENDTests.m; sourceTree = "<group>"; };
+		527DC4BF1C77F112000E9961 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		527DC4C01C77F112000E9961 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				527DC4A31C77EEFB000E9961 /* Images.xcassets */,
 				527DC4A51C77EEFB000E9961 /* LaunchScreen.xib */,
 				527DC4961C77EEFB000E9961 /* Supporting Files */,
+				527DC4BF1C77F112000E9961 /* SplashViewController.h */,
+				527DC4C01C77F112000E9961 /* SplashViewController.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				527DC49F1C77EEFB000E9961 /* ViewController.m in Sources */,
 				527DC49C1C77EEFB000E9961 /* AppDelegate.m in Sources */,
 				527DC4991C77EEFB000E9961 /* main.m in Sources */,
+				527DC4C11C77F112000E9961 /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
