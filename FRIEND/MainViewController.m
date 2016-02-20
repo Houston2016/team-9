@@ -18,6 +18,7 @@ static NSString * const blankTableCell = @"blankTableCell";
     NSArray *titles;
     NSArray *subtitles;
     NSArray *attendingTexts;
+    NSArray *times;
     
     UIImage *image;
     NSString *selectedTitle;
@@ -40,7 +41,7 @@ static NSString * const blankTableCell = @"blankTableCell";
     UIBarButtonItem *hamburger = [[UIBarButtonItem alloc] initWithCustomView:hamburgerButton];
     
     self.navigationController.navigationBar.titleTextAttributes = @{
-                                                                    NSForegroundColorAttributeName: [UIColor colorWithRed:212/255.0 green:28/255.0 blue:36/255.0 alpha: 1],
+                                                                    NSForegroundColorAttributeName: [UIColor colorWithRed:47/255.0 green:211/255.0 blue:148/255.0 alpha: 1],
                                                                     UITextAttributeFont: [UIFont fontWithName:@"Montserrat-Regular" size:18.0f]};
     self.navigationItem.title = @"FRIEND";
     self.navigationItem.leftBarButtonItem = hamburger;
@@ -50,9 +51,9 @@ static NSString * const blankTableCell = @"blankTableCell";
     
     
     images = [[NSArray alloc] initWithObjects: @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", nil];
-    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"tmp", nil];
+    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"", nil];
     titles = [[NSArray alloc] initWithObjects: @"Community Survey", @"Town Meeting", @"Volunteer Opportunity",nil];
-    subtitles = [[NSArray alloc] initWithObjects: @"", @"", @"Volunteer at your local library", nil];
+    subtitles = [[NSArray alloc] initWithObjects: @"Posted three days ago", @"6:30 this Friday at the Community Center", @"Volunteer at your local library", nil];
     [self.table_view reloadData];
     
 }
