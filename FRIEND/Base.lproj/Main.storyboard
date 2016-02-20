@@ -371,6 +371,9 @@
                                 <state key="normal" image="plus_teal.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="plusClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="bNy-mU-TjD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Earn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQN-Mc-EG0">
                                 <rect key="frame" x="14" y="205" width="122" height="23"/>
@@ -391,6 +394,9 @@
                                 <state key="normal" title="Button" image="minus_blue.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="minusClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="U4m-DL-qhc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btw-xx-n8n">
                                 <rect key="frame" x="58" y="361" width="36" height="33"/>
@@ -451,6 +457,9 @@
                                 <state key="normal" title="Button" image="plus_blue.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="plusClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="Vvb-Ae-GoD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Learn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIx-vq-rwJ">
                                 <rect key="frame" x="14" y="301" width="129" height="23"/>
@@ -531,6 +540,9 @@
                                 <state key="normal" title="Button" image="plus_purple.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="plusClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="5a7-bo-zuk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Belong" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdr-3u-B94">
                                 <rect key="frame" x="14" y="402" width="99" height="23"/>
@@ -563,6 +575,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="submitPreferences:" destination="edN-2v-fE9" eventType="touchUpInside" id="iEd-RH-p9S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okG-RC-VEP">
                                 <rect key="frame" x="14" y="479" width="36" height="9"/>
@@ -573,6 +588,9 @@
                                 <state key="normal" title="Button" image="minus_purple.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="minusClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="OMI-R4-Foq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Al-mt-1UT">
                                 <rect key="frame" x="14" y="276" width="36" height="9"/>
@@ -583,6 +601,9 @@
                                 <state key="normal" image="minus_teal.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="minusClick:" destination="edN-2v-fE9" eventType="touchUpInside" id="nEb-mC-Rnl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Earning programs help the community understand jobs and finances" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0F-ug-fps">
                                 <rect key="frame" x="16" y="227" width="288" height="33"/>
