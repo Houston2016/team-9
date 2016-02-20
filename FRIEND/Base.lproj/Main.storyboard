@@ -3,6 +3,15 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -25,10 +34,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Teaser Controller-->
         <scene sceneID="Lop-R8-vxD">
             <objects>
-                <viewController id="uFG-hd-ZeD" sceneMemberID="viewController">
+                <viewController id="uFG-hd-ZeD" customClass="TeaserController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="p61-ta-gPv"/>
                         <viewControllerLayoutGuide type="bottom" id="g4a-9j-2eU"/>
@@ -45,5 +54,74 @@
             </objects>
             <point key="canvasLocation" x="782.5" y="304.5"/>
         </scene>
+        <!--Teaser Page View Controller-->
+        <scene sceneID="9hw-Wz-Toc">
+            <objects>
+                <viewController id="kbR-3h-bJU" customClass="TeaserPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eys-jZ-ZkU"/>
+                        <viewControllerLayoutGuide type="bottom" id="pNw-Xw-Dyk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sgP-yx-tFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNf-Vb-T44">
+                                <rect key="frame" x="297" y="28" width="62" height="66"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipTeasers:" destination="kbR-3h-bJU" eventType="touchUpInside" id="liL-oW-HCg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to Friend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xce-Lz-NYf">
+                                <rect key="frame" x="16" y="344" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend helps you connect to your community" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zp-K7-Vdv">
+                                <rect key="frame" x="43" y="373" width="309" height="52"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vv0-uL-RjD">
+                                <rect key="frame" x="70" y="595" width="234" height="52"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="kbR-3h-bJU" eventType="touchUpInside" id="1sc-Hn-mUS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arrow_icon1.1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ht8-QB-Y4m">
+                                <rect key="frame" x="177" y="616" width="20" height="10"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z97-MC-OsG">
+                                <rect key="frame" x="64" y="186" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="downArrow" destination="ht8-QB-Y4m" id="OAD-uA-OOZ"/>
+                        <outlet property="imageView" destination="Z97-MC-OsG" id="Xhh-Ss-7Nz"/>
+                        <outlet property="mainLabel" destination="xce-Lz-NYf" id="t6t-Hb-hD1"/>
+                        <outlet property="nextButton" destination="vv0-uL-RjD" id="COY-95-fhD"/>
+                        <outlet property="skipButton" destination="VNf-Vb-T44" id="7Hb-tO-0mw"/>
+                        <outlet property="subLabel" destination="8Zp-K7-Vdv" id="gYG-UY-3UO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psI-7u-TFC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1292.5" y="304.5"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="arrow_icon1.1.png" width="65" height="35"/>
+    </resources>
 </document>

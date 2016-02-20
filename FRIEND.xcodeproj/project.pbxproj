@@ -15,6 +15,12 @@
 		527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4A51C77EEFB000E9961 /* LaunchScreen.xib */; };
 		527DC4B31C77EEFB000E9961 /* FRIENDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4B21C77EEFB000E9961 /* FRIENDTests.m */; };
 		527DC4C11C77F112000E9961 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4C01C77F112000E9961 /* SplashViewController.m */; };
+		527DC4C41C77F1C2000E9961 /* TeaserController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4C31C77F1C2000E9961 /* TeaserController.m */; };
+		527DC4C71C77F2DD000E9961 /* gender_neutral_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4C61C77F2DD000E9961 /* gender_neutral_icon.png */; };
+		527DC4CA1C77F32B000E9961 /* TeaserPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4C91C77F32B000E9961 /* TeaserPageViewController.m */; };
+		527DC4CD1C77F4CD000E9961 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4CB1C77F452000E9961 /* Montserrat-Light.otf */; };
+		527DC4CE1C77F4CD000E9961 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */; };
+		527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,14 @@
 		527DC4B21C77EEFB000E9961 /* FRIENDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRIENDTests.m; sourceTree = "<group>"; };
 		527DC4BF1C77F112000E9961 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		527DC4C01C77F112000E9961 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		527DC4C21C77F1C2000E9961 /* TeaserController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeaserController.h; sourceTree = "<group>"; };
+		527DC4C31C77F1C2000E9961 /* TeaserController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeaserController.m; sourceTree = "<group>"; };
+		527DC4C61C77F2DD000E9961 /* gender_neutral_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender_neutral_icon.png; sourceTree = "<group>"; };
+		527DC4C81C77F32B000E9961 /* TeaserPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeaserPageViewController.h; sourceTree = "<group>"; };
+		527DC4C91C77F32B000E9961 /* TeaserPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeaserPageViewController.m; sourceTree = "<group>"; };
+		527DC4CB1C77F452000E9961 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_icon1.1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +98,7 @@
 		527DC4951C77EEFB000E9961 /* FRIEND */ = {
 			isa = PBXGroup;
 			children = (
+				527DC4C51C77F2AB000E9961 /* Resources */,
 				527DC49A1C77EEFB000E9961 /* AppDelegate.h */,
 				527DC49B1C77EEFB000E9961 /* AppDelegate.m */,
 				527DC49D1C77EEFB000E9961 /* ViewController.h */,
@@ -94,6 +109,10 @@
 				527DC4961C77EEFB000E9961 /* Supporting Files */,
 				527DC4BF1C77F112000E9961 /* SplashViewController.h */,
 				527DC4C01C77F112000E9961 /* SplashViewController.m */,
+				527DC4C21C77F1C2000E9961 /* TeaserController.h */,
+				527DC4C31C77F1C2000E9961 /* TeaserController.m */,
+				527DC4C81C77F32B000E9961 /* TeaserPageViewController.h */,
+				527DC4C91C77F32B000E9961 /* TeaserPageViewController.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -122,6 +141,17 @@
 				527DC4B11C77EEFB000E9961 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		527DC4C51C77F2AB000E9961 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				527DC4CB1C77F452000E9961 /* Montserrat-Light.otf */,
+				527DC4CC1C77F452000E9961 /* Montserrat-Regular.otf */,
+				527DC4C61C77F2DD000E9961 /* gender_neutral_icon.png */,
+				527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +234,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				527DC4CD1C77F4CD000E9961 /* Montserrat-Light.otf in Resources */,
+				527DC4CE1C77F4CD000E9961 /* Montserrat-Regular.otf in Resources */,
 				527DC4A21C77EEFB000E9961 /* Main.storyboard in Resources */,
+				527DC4C71C77F2DD000E9961 /* gender_neutral_icon.png in Resources */,
+				527DC4D01C77F57E000E9961 /* arrow_icon1.1.png in Resources */,
 				527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */,
 				527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */,
 			);
@@ -226,8 +260,10 @@
 			files = (
 				527DC49F1C77EEFB000E9961 /* ViewController.m in Sources */,
 				527DC49C1C77EEFB000E9961 /* AppDelegate.m in Sources */,
+				527DC4C41C77F1C2000E9961 /* TeaserController.m in Sources */,
 				527DC4991C77EEFB000E9961 /* main.m in Sources */,
 				527DC4C11C77F112000E9961 /* SplashViewController.m in Sources */,
+				527DC4CA1C77F32B000E9961 /* TeaserPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
