@@ -130,12 +130,12 @@ static NSString * const blankTableCell = @"blankTableCell";
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+/*- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row % 2 == 1) {
         return 10;
     } else {
         return 400;
     }
-}
+}*/
 
 @end
