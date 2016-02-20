@@ -17,6 +17,7 @@ static NSString * const blankTableCell = @"blankTableCell";
     NSArray *images;
     NSArray *titles;
     NSArray *subtitles;
+    NSArray *attendingTexts;
     
     UIImage *image;
     NSString *selectedTitle;
@@ -49,7 +50,8 @@ static NSString * const blankTableCell = @"blankTableCell";
     
     
     images = [[NSArray alloc] initWithObjects: @"gender_neutral_icon.png", @"gender_neutral_icon.png", @"gender_neutral_icon.png", nil];
-    titles = [[NSArray alloc] initWithObjects: @"Community Servey", @"Town Meeting", @"Volunteer Opportunity",nil];
+    attendingTexts = [[NSArray alloc] initWithObjects:@"4 friends attending", @"1 friend attending", @"tmp", nil];
+    titles = [[NSArray alloc] initWithObjects: @"Community Survey", @"Town Meeting", @"Volunteer Opportunity",nil];
     subtitles = [[NSArray alloc] initWithObjects: @"", @"", @"Volunteer at your local library", nil];
     [self.table_view reloadData];
     
@@ -131,6 +133,12 @@ static NSString * const blankTableCell = @"blankTableCell";
     
     [cell.main_label setText:[titles objectAtIndex:tmpVal]];
     [cell.sub_label setText:[subtitles objectAtIndex:tmpVal]];
+    NSString *tmpText = [attendingTexts objectAtIndex:tmpVal];
+    [cell.attending_label setText:tmpText];
+    if ([tmpText isEqualToString:@""]) {
+        [cell.facebook_img setHidden:TRUE];
+    }
+    
     
 }
 

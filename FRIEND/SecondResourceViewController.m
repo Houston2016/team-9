@@ -107,12 +107,12 @@ static NSString * const blankTableCell = @"blankTableCell";
 - (void)configureBasicCell:(ResourceTableCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSInteger tmpVal = indexPath.row / 2;
     
-    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
+    /*NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:
                                 [self methodSignatureForSelector:@selector(yourButtonClicked:withString:)]];
     [invocation setTarget:self];
     [invocation setSelector:@selector(changeImage:withString:)];
     [invocation setArgument:A1 atIndex:2];
-    [invocation setArgument:fileString2 atIndex:3];
+    [invocation setArgument:fileString2 atIndex:3];*/
     
     [cell.firstheart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [cell.secondHeart addTarget:self action:@selector(yourButtonClicked:) forControlEvents:UIControlEventTouchUpInside];

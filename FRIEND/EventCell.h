@@ -12,5 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *main_label;
 @property (weak, nonatomic) IBOutlet UILabel *sub_label;
 @property (weak, nonatomic) IBOutlet UIImageView *table_img;
+@property (weak, nonatomic) IBOutlet UIImageView *facebook_img;
+@property (weak, nonatomic) IBOutlet UILabel *attending_label;
 
 @end

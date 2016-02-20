@@ -15,6 +15,7 @@
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
             <string>Montserrat-Light</string>
+            <string>Montserrat-Light</string>
         </mutableArray>
         <mutableArray key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
@@ -141,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="782.5" y="-465.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View-->
         <scene sceneID="9N5-iW-jzF">
             <objects>
-                <viewController id="eLs-ZZ-IwV" sceneMemberID="viewController">
+                <viewController id="eLs-ZZ-IwV" customClass="loginView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dwn-qz-HtR"/>
                         <viewControllerLayoutGuide type="bottom" id="2GI-jB-mCd"/>
@@ -177,14 +178,20 @@
                                 <state key="normal" title="skip">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipButton:" destination="eLs-ZZ-IwV" eventType="touchUpInside" id="BXD-Da-gdi"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fb-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="xRV-Ua-Fj4">
+                                <rect key="frame" x="87" y="428" width="200" height="42"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rTr-QN-j8l"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="Qlr-Qy-bpH" kind="push" id="RDV-vz-o4a"/>
+                        <segue destination="Qlr-Qy-bpH" kind="push" identifier="loginSegue" id="RDV-vz-o4a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5R-5q-ZTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -248,6 +255,15 @@
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 friends attending" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldi-n9-Kga">
+                                                    <rect key="frame" x="165" y="71" width="147" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="13"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="facebook.png" translatesAutoresizingMaskIntoConstraints="NO" id="awx-v6-of5">
+                                                    <rect key="frame" x="320" y="76" width="15" height="15"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="ZQo-5E-qLL" firstAttribute="top" secondItem="VPN-iB-PF4" secondAttribute="topMargin" constant="9" id="6cu-0J-oDS"/>
@@ -267,6 +283,8 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="attending_label" destination="Ldi-n9-Kga" id="Lr2-k6-sda"/>
+                                            <outlet property="facebook_img" destination="awx-v6-of5" id="IBJ-L0-Won"/>
                                             <outlet property="main_label" destination="drL-1O-iWt" id="O1Z-v0-eod"/>
                                             <outlet property="sub_label" destination="S0O-oh-I9w" id="W4w-CL-2D2"/>
                                             <outlet property="table_img" destination="ZQo-5E-qLL" id="qoJ-IW-F7q"/>
@@ -991,6 +1009,8 @@
     </scenes>
     <resources>
         <image name="arrow_icon1.1.png" width="65" height="35"/>
+        <image name="facebook.png" width="512" height="512"/>
+        <image name="fb-icon.png" width="202" height="46"/>
         <image name="fingerprint.png" width="512" height="512"/>
         <image name="gender_neutral_icon.png" width="646" height="646"/>
         <image name="heart_empty.png" width="154" height="144"/>

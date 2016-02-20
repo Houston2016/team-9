@@ -43,6 +43,8 @@
 		527DC4FD1C7818FF000E9961 /* ResourceTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */; };
 		527DC4FF1C7822D7000E9961 /* fingerprint.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC4FE1C7822D7000E9961 /* fingerprint.png */; };
 		527DC5011C78232D000E9961 /* fb-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5001C78232D000E9961 /* fb-icon.png */; };
+		527DC5041C782433000E9961 /* loginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 527DC5031C782433000E9961 /* loginView.m */; };
+		527DC5081C7829E1000E9961 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 527DC5071C7829E1000E9961 /* facebook.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,9 @@
 		527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceTableCell.m; sourceTree = "<group>"; };
 		527DC4FE1C7822D7000E9961 /* fingerprint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fingerprint.png; sourceTree = "<group>"; };
 		527DC5001C78232D000E9961 /* fb-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fb-icon.png"; sourceTree = "<group>"; };
+		527DC5021C782433000E9961 /* loginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loginView.h; sourceTree = "<group>"; };
+		527DC5031C782433000E9961 /* loginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginView.m; sourceTree = "<group>"; };
+		527DC5071C7829E1000E9961 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +177,8 @@
 				527DC4F91C781286000E9961 /* SecondResourceViewController.m */,
 				527DC4FB1C7818FF000E9961 /* ResourceTableCell.h */,
 				527DC4FC1C7818FF000E9961 /* ResourceTableCell.m */,
+				527DC5021C782433000E9961 /* loginView.h */,
+				527DC5031C782433000E9961 /* loginView.m */,
 			);
 			path = FRIEND;
 			sourceTree = "<group>";
@@ -226,6 +233,7 @@
 				527DC4CF1C77F57E000E9961 /* arrow_icon1.1.png */,
 				527DC4D71C7801C0000E9961 /* hamburger_icon.png */,
 				527DC4FE1C7822D7000E9961 /* fingerprint.png */,
+				527DC5071C7829E1000E9961 /* facebook.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -327,6 +335,7 @@
 				527DC4A71C77EEFB000E9961 /* LaunchScreen.xib in Resources */,
 				527DC4F31C780A8B000E9961 /* plus_teal.png in Resources */,
 				527DC4EA1C780A8B000E9961 /* heart_icon_teal.png in Resources */,
+				527DC5081C7829E1000E9961 /* facebook.png in Resources */,
 				527DC4A41C77EEFB000E9961 /* Images.xcassets in Resources */,
 				527DC4ED1C780A8B000E9961 /* heartopen_icon_teal.png in Resources */,
 				527DC4E81C780A8B000E9961 /* heart_icon_blue.png in Resources */,
@@ -361,6 +370,7 @@
 				527DC4991C77EEFB000E9961 /* main.m in Sources */,
 				527DC4D31C77F97B000E9961 /* MainViewController.m in Sources */,
 				527DC4C11C77F112000E9961 /* SplashViewController.m in Sources */,
+				527DC5041C782433000E9961 /* loginView.m in Sources */,
 				527DC4CA1C77F32B000E9961 /* TeaserPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
